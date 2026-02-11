@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facing Foreclosure? A Bayonne Homeowner's Guide to Your Options — Daniela Sepúlveda</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1a2332;
+  --navy-light: #243044;
+  --gold: #c9a96e;
+  --gold-light: #dfc99a;
+  --gold-pale: #f5edd8;
+  --white: #ffffff;
+  --warm-gray: #f7f5f2;
+  --text: #2c2c2c;
+  --text-light: #5a5a5a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+  background: var(--white);
+}
+
+/* PAGE BREAK UTILITY */
+.page-break { page-break-after: always; break-after: page; }
+
+/* COVER PAGE */
+.cover {
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 40%, #2a3d55 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.cover::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,169,110,0.08) 0%, transparent 70%);
+}
+.cover::after {
+  content: '';
+  position: absolute;
+  bottom: -150px; left: -150px;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,169,110,0.05) 0%, transparent 70%);
+}
+.cover-badge {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+.cover h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--white);
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 700px;
+  margin-bottom: 16px;
+}
+.cover h1 span {
+  color: var(--gold);
+}
+.cover-subtitle {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold-light);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+.cover-line {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 0 auto 40px;
+}
+.cover-author {
+  color: rgba(255,255,255,0.85);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.cover-author strong {
+  color: var(--white);
+  font-weight: 600;
+}
+.cover-brokerage {
+  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+.cover-confidential {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(201,169,110,0.12);
+  border: 1px solid rgba(201,169,110,0.25);
+  color: var(--gold-light);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px 28px;
+  border-radius: 6px;
+}
+
+/* SECTION PAGES */
+.section {
+  padding: 60px 50px;
+  max-width: 850px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.section-sm { min-height: auto; padding-bottom: 40px; }
+
+.section-header {
+  margin-bottom: 36px;
+}
+.section-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.section h2 span { color: var(--gold); }
+.section-intro {
+  font-size: 17px;
+  color: var(--text-light);
+  line-height: 1.8;
+  max-width: 650px;
+}
+.section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 32px 0 12px;
+}
+.section p { margin-bottom: 14px; }
+
+/* CALLOUT BOX */
+.callout {
+  background: var(--gold-pale);
+  border-left: 4px solid var(--gold);
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+  margin: 24px 0;
+}
+.callout-navy {
+  background: var(--navy);
+  border-left-color: var(--gold);
+  color: var(--white);
+}
+.callout-navy strong { color: var(--gold-light); }
+.callout p { margin-bottom: 0; }
+.callout-icon {
+  font-size: 20px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* KEY TAKEAWAY */
+.takeaway {
+  background: var(--warm-gray);
+  border: 1px solid #e8e4de;
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin: 28px 0;
+  text-align: center;
+}
+.takeaway p {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  color: var(--navy);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  margin: 32px 0;
+  padding-left: 36px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 14px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), var(--navy));
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+  padding-left: 20px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px; top: 6px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 2px var(--gold);
+}
+.timeline-item.danger::before { background: #c0392b; box-shadow: 0 0 0 2px #c0392b; }
+.timeline-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2px;
+}
+.timeline-item.danger .timeline-label { color: #c0392b; }
+.timeline-title {
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.timeline-desc {
+  font-size: 13.5px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* OPTIONS CARDS */
+.option-card {
+  border: 1px solid #e0dcd5;
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+.option-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+.option-rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.option-card.recommended {
+  border-color: var(--gold);
+  background: linear-gradient(135deg, #fffdf8 0%, #faf6ee 100%);
+}
+.option-card.recommended::after {
+  content: '★ BEST FOR MOST HOMEOWNERS';
+  position: absolute;
+  top: -10px; right: 20px;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+.option-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.option-desc { font-size: 14px; color: var(--text-light); margin-bottom: 8px; }
+.option-best {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+/* COMPARISON TABLE */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 13.5px;
+}
+.compare-table thead th {
+  background: var(--navy);
+  color: var(--white);
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.compare-table thead th:first-child { border-radius: 8px 0 0 0; }
+.compare-table thead th:last-child { border-radius: 0 8px 0 0; }
+.compare-table tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+.compare-table tbody tr:nth-child(even) { background: var(--warm-gray); }
+.compare-table .highlight-row { background: var(--gold-pale) !important; font-weight: 500; }
+.impact-low { color: #27ae60; font-weight: 600; }
+.impact-med { color: #f39c12; font-weight: 600; }
+.impact-high { color: #c0392b; font-weight: 600; }
+
+/* STEPS */
+.steps { counter-reset: step; margin: 24px 0; }
+.step {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+.step-num {
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-content h4 {
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+.step-content p {
+  font-size: 14px;
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* EXAMPLE BOX */
+.example-box {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin: 28px 0;
+  color: var(--white);
+}
+.example-box .example-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.example-box p { color: rgba(255,255,255,0.9); font-size: 14.5px; }
+.example-box strong { color: var(--gold-light); }
+
+/* RESOURCE CARD */
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+.resource-card {
+  background: var(--warm-gray);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e8e4de;
+}
+.resource-card .rc-icon { font-size: 22px; margin-bottom: 8px; }
+.resource-card h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.resource-card p {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+.resource-card .rc-phone {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.5px;
+}
+.resource-card .rc-note {
+  font-size: 11.5px;
+  color: var(--gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* QUOTE */
+.testimonial {
+  text-align: center;
+  margin: 32px 0;
+  padding: 28px;
+  background: var(--warm-gray);
+  border-radius: 12px;
+}
+.testimonial blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: var(--navy);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.testimonial cite {
+  font-style: normal;
+  font-size: 13px;
+  color: var(--text-light);
+  font-weight: 500;
+}
+.testimonial .stars {
+  color: var(--gold);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* CONTACT BLOCK */
+.contact-block {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 100%);
+  border-radius: 14px;
+  padding: 40px;
+  text-align: center;
+  color: var(--white);
+  margin: 32px 0;
+}
+.contact-block h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--white);
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+.contact-block .contact-sub {
+  color: rgba(255,255,255,0.65);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.contact-method {
+  text-align: center;
+}
+.contact-method .cm-icon { font-size: 24px; margin-bottom: 6px; }
+.contact-method .cm-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 4px;
+}
+.contact-method .cm-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gold-light);
+}
+.contact-confidential {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 16px;
+  font-style: italic;
+}
+.qr-placeholder {
+  width: 100px; height: 100px;
+  border: 2px dashed rgba(255,255,255,0.2);
+  border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+.guide-footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 11px;
+  color: var(--text-light);
+  border-top: 1px solid #eee;
+}
+
+/* PRINT STYLES */
+@media print {
+  body { font-size: 12pt; }
+  .cover { min-height: 100vh; }
+  .section { min-height: auto; padding: 36pt 40pt; }
+  .page-break { page-break-after: always; break-after: page; }
+  .option-card:hover { box-shadow: none; }
+  .resources-grid { grid-template-columns: 1fr 1fr; }
+  .contact-methods { gap: 24px; }
+  .cover::before, .cover::after { display: none; }
+  @page { margin: 0.5in; }
+  @page :first { margin: 0; }
+}
+
+@media (max-width: 600px) {
+  .cover h1 { font-size: 30px; }
+  .section { padding: 40px 24px; }
+  .resources-grid { grid-template-columns: 1fr; }
+  .contact-methods { flex-direction: column; gap: 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER PAGE ==================== -->
+<div class="cover">
+  <div class="cover-badge">Free &amp; Confidential Guide</div>
+  <h1>Facing Foreclosure?<br><span>You Have More Options<br>Than You Think</span></h1>
+  <p class="cover-subtitle">A Bayonne Homeowner's Guide</p>
+  <div class="cover-line"></div>
+  <p class="cover-author">Prepared by <strong>Daniela Sepúlveda</strong></p>
+  <p class="cover-brokerage">Weichert, Realtors® — Bayonne</p>
+  <div class="cover-confidential">🔒 Everything in this guide is for your eyes only</div>
+</div>
+<div class="page-break"></div>
+
+<!-- ==================== YOU'RE NOT ALONE ==================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section One</div>
+    <h2>You're <span>Not Alone</span></h2>
+  </div>
+
+  <p>If you're reading this, you may be feeling overwhelmed, scared, or even ashamed. Please know: <strong>you have nothing to be ashamed of.</strong></p>
+
+  <p>Thousands of New Jersey homeowners face foreclosure every single year. In fact, New Jersey has consistently ranked among the top states in the country for foreclosure filings. In recent years, approximately <strong>1 in every 1,400 NJ housing units</strong> receives a foreclosure filing each quarter. You are far from the only person going through this.</p>
+
+  <p>People end up here for all kinds of reasons — job loss, medical emergencies, divorce, rising costs, adjustable rates increasing. <strong>Life happens.</strong> This doesn't define you.</p>
+
+  <div class="callout">
+    <span class="callout-icon">💡</span>
+    <p><strong>This guide exists for one reason:</strong> to show you that you have options — real, practical options — and that it's not too late to take control of your situation. There is no judgment here. Only solutions.</p>
+  </div>
+
+  <p>Whether you're one month behind or twelve, whether you've received court papers or you're just starting to worry — the information in this guide can help. And the sooner you act, the more options you'll have.</p>
+
+  <div class="takeaway">
+    <p>🏠 You are not alone. You are not powerless.<br>And you have more time than you think.</p>
+  </div>
+</div>
+<div class="page-break"></div>
+
+<!-- ==================== FORECLOSURE TIMELINE ==================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section Two</div>
+    <h2>Understanding the <span>Foreclosure Timeline</span> in New Jersey</h2>
+  </div>
+
+  <p>Here's something most people don't know: <strong>New Jersey is a judicial foreclosure state.</strong> That means your lender has to go through the court system to foreclose — and that process is one of the slowest in the entire country.</p>
+
+  <div class="callout callout-navy">
+    <p><strong>Key fact:</strong> The NJ foreclosure process can take <strong>1 to 3+ years</strong> from first missed payment to sheriff sale. That means you have time to explore your options — but you should start now.</p>
+  </div>
+
+  <h3>⚖️ The NJ Foreclosure Timeline</h3>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-label">Day 1 – Day 30</div>
+      <div class="timeline-title">Missed Payment</div>
+      <div class="timeline-desc">Your lender will contact you to follow up. Late fees begin. This is the easiest time to resolve the situation.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-label">30 – 90 Days</div>
+      <div class="timeline-title">Notice of Default / Demand Letter</div>
+      <div class="timeline-desc">Your servicer sends a formal notice that you're behind. They must offer you loss mitigation options before proceeding.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-label">90+ Days</div>
+      <div class="timeline-title">Lis Pendens Filed (Lawsuit Begins)</div>
+      <div class="timeline-desc">The lender files a foreclosure complaint with the court. You'll be served legal papers. <strong>Don't ignore them</strong> — you have the right to respond.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-label">6 – 18 Months</div>
+      <div class="timeline-title">Court Process &amp; Mediation</div>
+      <div class="timeline-desc">The case moves through the court system. NJ offers a Foreclosure Mediation Program to help you negotiate with your lender. You can request mediation.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-label">12 – 24+ Months</div>
+      <div class="timeline-title">Final Judgment</div>
+      <div class="timeline-desc">If no resolution is reached, the court issues a final judgment of foreclosure. Even at this stage, options may still exist.</div>
+    </div>
+    <div class="timeline-item danger">
+      <div class="timeline-label">After Final Judgment</div>
+      <div class="timeline-title">Sheriff Sale</div>
+      <div class="timeline-desc">The property is sold at public auction. NJ law provides a right of redemption even after sale, but this is the stage to avoid at all costs.</div>
+    </div>
+  </div>
+
+  <div class="takeaway">
+    <p>⏰ YOU HAVE TIME — but every day you wait, you lose options.<br>The best time to act is right now.</p>
+  </div>
+</div>
+<div class="page-break"></div>
+
+<!-- ==================== YOUR 6 OPTIONS ==================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section Three</div>
+    <h2>Your <span>6 Options</span></h2>
+    <p class="section-intro">Ranked from best to most drastic. You may qualify for more than one.</p>
+  </div>
+
+  <div class="option-card">
+    <div class="option-rank">1</div>
+    <div class="option-title">Reinstatement</div>
+    <div class="option-desc">Pay the total amount you're behind (including late fees and legal costs) to bring your mortgage current. Your loan continues as if nothing happened.</div>
+    <div class="option-best">✦ Best if: You had a temporary hardship and now have the funds to catch up.</div>
+  </div>
+
+  <div class="option-card">
+    <div class="option-rank">2</div>
+    <div class="option-title">Loan Modification</div>
+    <div class="option-desc">Work with your lender to permanently change your loan terms — lower interest rate, extended repayment period, or even reduced principal balance. Contact your servicer's <strong>loss mitigation department</strong> directly.</div>
+    <div class="option-best">✦ Best if: You can afford a lower monthly payment but not the current one. Minimal credit impact.</div>
+  </div>
+
+  <div class="option-card recommended">
+    <div class="option-rank">3</div>
+    <div class="option-title">Sell Your Home Before Foreclosure</div>
+    <div class="option-desc">If your home is worth more than what you owe, selling puts <strong>cash in your pocket</strong>, pays off your mortgage, and protects your credit. In Bayonne's strong market, many homeowners have significant equity they don't even realize. A pre-foreclosure sale is dramatically better for your financial future than a foreclosure.</div>
+    <div class="option-best">✦ Best if: You have equity in your home and want to walk away with money and your credit intact. This is where Daniela can help most.</div>
+  </div>
+
+  <div class="option-card">
+    <div class="option-rank">4</div>
+    <div class="option-title">Short Sale</div>
+    <div class="option-desc">If you owe more than your home is worth, you may be able to negotiate with the bank to accept less than the full balance. Requires lender approval, but it's far less damaging than foreclosure.</div>
+    <div class="option-best">✦ Best if: You're "underwater" on your mortgage but want to avoid foreclosure on your record.</div>
+  </div>
+
+  <div class="option-card">
+    <div class="option-rank">5</div>
+    <div class="option-title">Deed in Lieu of Foreclosure</div>
+    <div class="option-desc">You voluntarily transfer ownership of the property to the lender. This avoids the court process and may be negotiated to minimize deficiency judgments.</div>
+    <div class="option-best">✦ Best if: Other options have been exhausted and you want to avoid the lengthy court process.</div>
+  </div>
+
+  <div class="option-card">
+    <div class="option-rank">6</div>
+    <div class="option-title">Bankruptcy (Chapter 13)</div>
+    <div class="option-desc">Filing Chapter 13 bankruptcy triggers an <strong>automatic stay</strong> that immediately halts foreclosure proceedings. It creates a court-supervised repayment plan (3–5 years) that lets you catch up on missed payments. <strong>Always consult a qualified attorney.</strong></div>
+    <div class="option-best">✦ Best if: You want to keep your home and need court protection to create a repayment plan. Last resort.</div>
+  </div>
+</div>
+<div class="page-break"></div>
+
+<!-- ==================== CREDIT IMPACT ==================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section Four</div>
+    <h2>The Credit Impact: <span>Why Acting NOW Matters</span></h2>
+  </div>
+
+  <p>One of the biggest reasons to act quickly is the impact on your <strong>credit score and future borrowing ability.</strong> Not all outcomes are equal — and the difference can mean years of your financial life.</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Credit Score Drop</th>
+        <th>Stays on Record</th>
+        <th>Buy Again In</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Loan Modification</strong></td>
+        <td class="impact-low">Minimal (0–50 pts)</td>
+        <td>Not reported separately</td>
+        <td class="impact-low">Immediately</td>
+      </tr>
+      <tr>
+        <td><strong>Reinstatement</strong></td>
+        <td class="impact-low">Minimal</td>
+        <td>Late payments (7 yrs)</td>
+        <td class="impact-low">Immediately</td>
+      </tr>
+      <tr class="highlight-row">
+        <td><strong>Pre-Foreclosure Sale ★</strong></td>
+        <td class="impact-med">50–100 pts</td>
+        <td>7 years</td>
+        <td class="impact-low">2–3 years</td>
+      </tr>
+      <tr>
+        <td><strong>Short Sale</strong></td>
+        <td class="impact-med">80–120 pts</td>
+        <td>7 years</td>
+        <td>2–4 years</td>
+      </tr>
+      <tr>
+        <td><strong>Deed in Lieu</strong></td>
+        <td class="impact-med">85–130 pts</td>
+        <td>7 years</td>
+        <td>3–4 years</td>
+      </tr>
+      <tr>
+        <td><strong>Foreclosure</strong></td>
+        <td class="impact-high">100–160 pts</td>
+        <td>7 years</td>
+        <td class="impact-high">5–7 years</td>
+      </tr>
+      <tr>
+        <td><strong>Bankruptcy</strong></td>
+        <td class="impact-high">130–200 pts</td>
+        <td>7–10 years</td>
+        <td class="impact-high">2–4 years</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <span class="callout-icon">💡</span>
+    <p><strong>The takeaway:</strong> A foreclosure on your record makes it nearly impossible to get a mortgage for 5–7 years and drops your credit score by up to 160 points. A pre-foreclosure sale? You could be buying again in 2–3 years — and you keep the equity.</p>
+  </div>
+
+  <div class="takeaway">
+    <p>Every day you wait narrows your options.<br>The same home, the same situation — but a completely different outcome<br>depending on <em>when</em> you act.</p>
+  </div>
+</div>
+<div class="page-break"></div>
+
+<!-- ==================== HOW SELLING WORKS ==================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section Five</div>
+    <h2>How Selling <span>Before Foreclosure</span> Works</h2>
+  </div>
+
+  <p>If you have equity in your home — and in today's Bayonne market, there's a good chance you do — selling before foreclosure may be your best path forward. Here's exactly how it works:</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Free Consultation</h4>
+        <p>We sit down (in person or by phone) and review your situation — how much you owe, your timeline, and what your home is worth. Everything is 100% confidential.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Home Valuation</h4>
+        <p>I'll provide a professional market analysis of your home's current value. You may be surprised — Bayonne property values have risen significantly in recent years.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Strategic Listing</h4>
+        <p>If selling is the right option, we price and market your home to attract serious buyers quickly. Bayonne homes in good locations are in high demand.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Close &amp; Get Paid</h4>
+        <p>At closing, the mortgage is paid off from the proceeds. Any remaining equity goes directly to you. Timeline: as fast as 30–45 days.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>Fresh Start</h4>
+        <p>You walk away with cash in your pocket, your credit protected, and the freedom to move forward on your own terms.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="example-box">
+    <div class="example-label">📋 Real Example from Bayonne</div>
+    <p>A Bayonne homeowner was <strong>4 months behind on mortgage payments</strong> and feeling hopeless. After a confidential consultation, we discovered their home had <strong>$150,000 in equity</strong> they didn't realize. By selling strategically, they paid off the full mortgage balance, caught up on other debts, and walked away with <strong>$85,000 cash</strong> to start fresh — with their credit intact.</p>
+  </div>
+
+  <div class="callout">
+    <span class="callout-icon">🏠</span>
+    <p><strong>You may have more equity than you think.</strong> Even if your home needs work, Bayonne's strong market means buyers and investors are actively looking. Don't assume the worst — let's find out together.</p>
+  </div>
+</div>
+<div class="page-break"></div>
+
+<!-- ==================== FREE RESOURCES ==================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-number">Section Six</div>
+    <h2>Free Resources for <span>NJ Homeowners</span></h2>
+    <p class="section-intro">You don't have to figure this out alone. These organizations offer free, confidential help to New Jersey homeowners facing foreclosure.</p>
+  </div>
+
+  <div class="resources-grid">
+    <div class="resource-card">
+      <div class="rc-icon">🏛️</div>
+      <h4>NJ Housing &amp; Mortgage Finance Agency (HMFA)</h4>
+      <p>State agency offering foreclosure prevention programs and homeowner assistance funds.</p>
+      <div class="rc-phone">1-800-654-6873</div>
+      <div class="rc-note">Free &amp; Confidential</div>
+    </div>
+    <div class="resource-card">
+      <div class="rc-icon">🤝</div>
+      <h4>HUD-Approved Housing Counselors</h4>
+      <p>Free counseling from government-certified advisors who work for YOU, not the bank.</p>
+      <div class="rc-phone">findahousecounselor.org</div>
+      <div class="rc-note">100% Free</div>
+    </div>
+    <div class="resource-card">
+      <div class="rc-icon">⚖️</div>
+      <h4>NJ Foreclosure Mediation Program</h4>
+      <p>Court-supervised mediation between you and your lender to find alternatives to foreclosure.</p>
+      <div class="rc-phone">Ask your court clerk</div>
+      <div class="rc-note">Available statewide</div>
+    </div>
+    <div class="resource-card">
+      <div class="rc-icon">📞</div>
+      <h4>Legal Aid of New Jersey</h4>
+      <p>Free legal assistance for income-qualifying homeowners facing foreclosure.</p>
+      <div class="rc-phone">1-888-576-5529</div>
+      <div class="rc-note">Free Legal Help</div>
+    </div>
+    <div class="resource-card">
+      <div class="rc-icon">🆘</div>
+      <h4>NJ 211</h4>
+      <p>Dial 211 for emergency assistance — utility help, food assistance, housing resources, and more.</p>
+      <div class="rc-phone">Dial 2-1-1</div>
+      <div class="rc-note">24/7 Helpline</div>
+    </div>
+    <div class="resource-card">
+      <div class="rc-icon">💰</div>
+      <h4>Homeowner Assistance Fund (HAF)</h4>
+      <p>Federal funds distributed by NJ to help homeowners catch up on mortgage payments, taxes, and utilities.</p>
+      <div class="rc-phone">nj.gov/dca/hmfa</div>
+      <div class="rc-note">While Funds Last</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <span class="callout-icon">💡</span>
+    <p><strong>Important:</strong> Be cautious of anyone who asks you to pay upfront for foreclosure help. Legitimate housing counselors and legal aid services are <strong>always free.</strong> If someone guarantees they can stop your foreclosure for a fee, it may be a scam.</p>
+  </div>
+</div>
+<div class="page-break"></div>
+
+<!-- ==================== BAYONNE SPECIFIC ==================== -->
+<div class="section section-sm">
+  <div class="section-header">
+    <div class="section-number">Section Seven</div>
+    <h2>Why <span>Bayonne</span> Homeowners Have an Advantage</h2>
+  </div>
+
+  <p>Here's some good news if you own property in Bayonne: <strong>you're in one of the strongest real estate markets in Hudson County.</strong></p>
+
+  <div class="callout callout-navy">
+    <p>🏘️ The average Bayonne home value is approximately <strong>$510,000</strong> — and demand continues to be strong. Even distressed properties have real value in this market.</p>
+  </div>
+
+  <h3>What Makes Bayonne Special</h3>
+  <p><strong>Proximity to NYC:</strong> Bayonne's location along the Hudson-Bergen Light Rail corridor makes it incredibly desirable for commuters priced out of Jersey City and Hoboken. Buyers are actively looking here.</p>
+
+  <p><strong>Multi-Family Demand:</strong> If you own a 2-, 3-, or 4-family home, you're sitting on one of the most sought-after property types in the market. Investors and owner-occupants compete aggressively for multi-family properties in Bayonne.</p>
+
+  <p><strong>Rising Values:</strong> Bayonne has seen significant appreciation over the past several years. If you bought your home more than 3–5 years ago, your equity may have grown substantially — even if your home needs updates.</p>
+
+  <p><strong>Active Buyer Pool:</strong> There are more buyers than available homes in Bayonne right now. That means even in a difficult situation, your property has value and desirability that works in your favor.</p>
+
+  <div class="takeaway">
+    <p>Your Bayonne home has value — often more than you expect.<br>Don't let foreclosure take what you've built. Let's find out what your home is worth.</p>
+  </div>
+</div>
+
+<!-- ==================== HOW DANIELA CAN HELP ==================== -->
+<div class="section section-sm">
+  <div class="section-header">
+    <div class="section-number">Section Eight</div>
+    <h2>How <span>Daniela</span> Can Help</h2>
+  </div>
+
+  <p>I created this guide because I believe every homeowner deserves to know their options — <em>all</em> of them, not just the ones that benefit me. Here's my promise to you:</p>
+
+  <ul style="margin: 16px 0 24px 20px;">
+    <li style="margin-bottom: 10px;"><strong>Free, confidential consultation</strong> — no obligation, no pressure, no judgment</li>
+    <li style="margin-bottom: 10px;"><strong>I'll walk you through ALL your options</strong> — including ones that don't involve selling</li>
+    <li style="margin-bottom: 10px;"><strong>If selling is the right path</strong>, I'll help you get the most value for your home in the shortest time</li>
+    <li style="margin-bottom: 10px;"><strong>I'll connect you with resources</strong> — housing counselors, legal aid, assistance programs</li>
+    <li style="margin-bottom: 10px;"><strong>I speak English and Spanish</strong> — Hablo inglés y español</li>
+  </ul>
+
+  <div class="testimonial">
+    <div class="stars">★★★★★</div>
+    <blockquote>"Daniela is very reliable, understanding and goes above and beyond the call of duty."</blockquote>
+    <cite>— Romaine Thomas, Google Review</cite>
+  </div>
+
+  <p style="text-align: center; font-family: 'Playfair Display', serif; font-size: 19px; color: var(--navy); font-style: italic; margin: 24px 0;">"I'm here to help, not to judge."</p>
+</div>
+<div class="page-break"></div>
+
+<!-- ==================== TAKE THE FIRST STEP ==================== -->
+<div class="section" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+  <div class="section-header" style="text-align: center;">
+    <div class="section-number">The First Step</div>
+    <h2>The Hardest Part Is<br><span>Making the First Call</span></h2>
+    <p class="section-intro" style="margin: 12px auto 0; text-align: center;">Everything after that gets easier. I promise.</p>
+  </div>
+
+  <div class="contact-block" style="width: 100%; max-width: 600px;">
+    <h3>Daniela Sepúlveda</h3>
+    <p class="contact-sub">Weichert, Realtors® — Bayonne</p>
+    <div class="contact-methods">
+      <div class="contact-method">
+        <div class="cm-icon">📞</div>
+        <div class="cm-label">Call or Text</div>
+        <div class="cm-value">201-877-0303</div>
+      </div>
+      <div class="contact-method">
+        <div class="cm-icon">✉️</div>
+        <div class="cm-label">Email</div>
+        <div class="cm-value">dsepulveda@weichert.com</div>
+      </div>
+      <div class="contact-method">
+        <div class="cm-icon">📱</div>
+        <div class="cm-label">Instagram</div>
+        <div class="cm-value">@danielarealestatenj</div>
+      </div>
+      <div class="contact-method">
+        <div class="cm-icon">🌐</div>
+        <div class="cm-label">Website</div>
+        <div class="cm-value">danielasepulveda.com</div>
+      </div>
+    </div>
+    <div class="qr-placeholder">QR Code</div>
+    <p class="contact-confidential">🔒 Everything we discuss is 100% confidential.</p>
+  </div>
+
+  <div style="margin-top: 32px; max-width: 500px;">
+    <p style="font-size: 15px; color: var(--text-light); line-height: 1.8;">You didn't choose this situation, but you <em>can</em> choose what happens next. Whether you need information, resources, or just someone to listen — I'm here.</p>
+    <p style="font-family: 'Playfair Display', serif; font-size: 20px; color: var(--navy); font-weight: 600; margin-top: 20px;">Your home. Your future. Your choice.</p>
+  </div>
+</div>
+
+<div class="guide-footer">
+  <p>© 2026 Daniela Sepúlveda | Weichert, Realtors® — Bayonne | This guide is for informational purposes only and does not constitute legal or financial advice. Please consult qualified professionals for your specific situation.</p>
+</div>
+
+</body>
+</html>

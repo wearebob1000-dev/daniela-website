@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 2026 Guide to Selling Your Bayonne Home — Daniela Sepúlveda</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1a2332;
+  --navy-light: #243044;
+  --gold: #c9a96e;
+  --gold-light: #d4ba85;
+  --gold-pale: #f5edd8;
+  --white: #ffffff;
+  --off-white: #f8f6f1;
+  --gray: #6b7280;
+  --gray-light: #e5e7eb;
+  --text: #2d3748;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  font-size: 11pt;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
+
+.page {
+  width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto;
+  padding: 0;
+  page-break-after: always;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ─── COVER PAGE ─── */
+.cover {
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1in;
+  position: relative;
+}
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 30% 20%, rgba(201,169,110,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 80%, rgba(201,169,110,0.05) 0%, transparent 50%);
+}
+.cover * { position: relative; z-index: 1; }
+.cover-rule {
+  width: 80px;
+  height: 2px;
+  background: var(--gold);
+  margin: 0 auto 2rem;
+}
+.cover-year {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14pt;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.cover h1 {
+  font-size: 36pt;
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.cover h1 em {
+  font-style: italic;
+  color: var(--gold);
+  display: block;
+  font-size: 40pt;
+}
+.cover-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: var(--gold-light);
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+}
+.cover-agent {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(201,169,110,0.3);
+}
+.cover-agent h3 {
+  font-size: 18pt;
+  font-weight: 600;
+  color: var(--white);
+}
+.cover-agent p {
+  font-family: 'Inter', sans-serif;
+  font-size: 10pt;
+  color: var(--gold-light);
+  margin-top: 0.3rem;
+  letter-spacing: 1px;
+}
+.cover-bottom {
+  position: absolute;
+  bottom: 0.6in;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.cover-bottom img { height: 28px; opacity: 0.7; }
+.cover-contact {
+  font-family: 'Inter', sans-serif;
+  font-size: 8.5pt;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+}
+
+/* ─── CONTENT PAGES ─── */
+.content {
+  padding: 0.7in 0.8in;
+}
+.content h2 {
+  font-size: 22pt;
+  color: var(--navy);
+  margin-bottom: 0.15in;
+  line-height: 1.2;
+}
+.content h2 .num {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+.content h3 {
+  font-size: 14pt;
+  color: var(--navy);
+  margin: 0.25in 0 0.08in;
+}
+.content h4 {
+  font-size: 11pt;
+  color: var(--navy-light);
+  margin: 0.15in 0 0.05in;
+}
+.content p { margin-bottom: 0.1in; }
+
+.gold-rule {
+  width: 50px;
+  height: 2px;
+  background: var(--gold);
+  margin-bottom: 0.2in;
+}
+
+/* Callout boxes */
+.callout {
+  background: var(--off-white);
+  border-left: 3px solid var(--gold);
+  padding: 0.18in 0.22in;
+  margin: 0.18in 0;
+  border-radius: 0 6px 6px 0;
+}
+.callout.navy {
+  background: var(--navy);
+  color: var(--white);
+  border-left-color: var(--gold);
+  border-radius: 6px;
+}
+.callout.navy strong { color: var(--gold); }
+.callout.gold-bg {
+  background: var(--gold-pale);
+  border-left-color: var(--gold);
+}
+.callout p { margin-bottom: 0; }
+
+/* Pull quote */
+.pull-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 16pt;
+  font-style: italic;
+  color: var(--navy);
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  padding: 0.2in 0;
+  margin: 0.25in 0;
+  text-align: center;
+  line-height: 1.4;
+}
+.pull-quote .attr {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 8.5pt;
+  color: var(--gold);
+  letter-spacing: 1px;
+  margin-top: 0.1in;
+}
+
+/* Stats row */
+.stats {
+  display: flex;
+  gap: 0.15in;
+  margin: 0.2in 0;
+}
+.stat-box {
+  flex: 1;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 0.18in 0.15in;
+  text-align: center;
+}
+.stat-box .num {
+  font-family: 'Playfair Display', serif;
+  font-size: 22pt;
+  font-weight: 700;
+  color: var(--gold);
+  display: block;
+}
+.stat-box .label {
+  font-size: 7.5pt;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.7);
+  margin-top: 2px;
+}
+
+/* Columns */
+.two-col {
+  columns: 2;
+  column-gap: 0.35in;
+}
+.two-col > * { break-inside: avoid; }
+
+/* Numbered list */
+.numbered-list { counter-reset: item; list-style: none; padding: 0; }
+.numbered-list li {
+  counter-increment: item;
+  padding: 0.1in 0 0.1in 0.45in;
+  position: relative;
+  border-bottom: 1px solid var(--gray-light);
+}
+.numbered-list li:last-child { border-bottom: none; }
+.numbered-list li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0.1in;
+  width: 28px;
+  height: 28px;
+  background: var(--gold);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 11pt;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+.numbered-list li strong { color: var(--navy); }
+
+/* Check list */
+.check-list { list-style: none; padding: 0; }
+.check-list li {
+  padding: 0.04in 0 0.04in 0.3in;
+  position: relative;
+  font-size: 10pt;
+}
+.check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 12pt;
+}
+
+/* Steps */
+.step {
+  display: flex;
+  gap: 0.15in;
+  margin: 0.12in 0;
+  align-items: flex-start;
+}
+.step-num {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: var(--gold);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 14pt;
+}
+.step-body h4 { margin-top: 0.02in; }
+.step-body p { font-size: 10pt; margin-bottom: 0; }
+
+/* Neighborhood cards */
+.hood-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.18in;
+  margin: 0.2in 0;
+}
+.hood-card {
+  background: var(--off-white);
+  border-radius: 8px;
+  padding: 0.2in;
+  border-top: 3px solid var(--gold);
+}
+.hood-card h4 {
+  font-size: 13pt;
+  margin: 0 0 0.06in;
+  color: var(--navy);
+}
+.hood-card p { font-size: 9.5pt; margin-bottom: 0.05in; }
+.hood-card .price {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 11pt;
+}
+
+/* Cost table */
+.cost-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.15in 0;
+  font-size: 10pt;
+}
+.cost-table th {
+  background: var(--navy);
+  color: var(--white);
+  text-align: left;
+  padding: 0.08in 0.12in;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 8.5pt;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.cost-table td {
+  padding: 0.06in 0.12in;
+  border-bottom: 1px solid var(--gray-light);
+}
+.cost-table tr:nth-child(even) td { background: var(--off-white); }
+.cost-table .total td {
+  font-weight: 700;
+  background: var(--gold-pale);
+  border-bottom: 2px solid var(--gold);
+}
+
+/* Review card */
+.review {
+  background: var(--off-white);
+  border-radius: 8px;
+  padding: 0.2in 0.25in;
+  margin: 0.15in 0;
+  position: relative;
+}
+.review::before {
+  content: '"';
+  font-family: 'Playfair Display', serif;
+  font-size: 48pt;
+  color: var(--gold);
+  position: absolute;
+  top: -0.05in;
+  left: 0.15in;
+  line-height: 1;
+}
+.review p { padding-left: 0.3in; font-style: italic; font-size: 10.5pt; }
+.review .reviewer {
+  padding-left: 0.3in;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 9pt;
+  margin-top: 0.08in;
+}
+.review .stars { color: var(--gold); font-style: normal; }
+
+/* CTA page */
+.cta-page {
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1in;
+}
+.cta-page h2 {
+  color: var(--white);
+  font-size: 28pt;
+  margin-bottom: 0.15in;
+}
+.cta-page .gold-rule { margin: 0 auto 0.3in; }
+.cta-page p { color: rgba(255,255,255,0.8); max-width: 5in; margin-bottom: 0.12in; }
+.cta-box {
+  background: rgba(201,169,110,0.12);
+  border: 1px solid rgba(201,169,110,0.3);
+  border-radius: 12px;
+  padding: 0.35in 0.5in;
+  margin: 0.3in 0;
+  display: inline-block;
+}
+.cta-box .label {
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold);
+  margin-bottom: 0.08in;
+}
+.cta-box .value {
+  font-family: 'Playfair Display', serif;
+  font-size: 20pt;
+  color: var(--white);
+}
+.cta-box .value a { color: var(--gold); text-decoration: none; }
+.cta-social {
+  margin-top: 0.3in;
+  font-size: 9.5pt;
+  color: rgba(255,255,255,0.6);
+}
+.cta-social a { color: var(--gold-light); text-decoration: none; }
+.qr-placeholder {
+  width: 1.2in;
+  height: 1.2in;
+  border: 2px dashed rgba(201,169,110,0.4);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2in auto 0;
+  font-size: 8pt;
+  color: rgba(255,255,255,0.4);
+}
+
+/* Footer */
+.page-footer {
+  position: absolute;
+  bottom: 0.4in;
+  left: 0.8in;
+  right: 0.8in;
+  display: flex;
+  justify-content: space-between;
+  font-size: 7.5pt;
+  color: var(--gray);
+  border-top: 1px solid var(--gray-light);
+  padding-top: 0.08in;
+}
+.page-footer .gold { color: var(--gold); }
+
+/* Emoji icons */
+.icon { font-size: 14pt; margin-right: 0.05in; vertical-align: middle; }
+
+/* Section intro */
+.section-intro {
+  font-size: 12pt;
+  color: var(--gray);
+  font-style: italic;
+  margin-bottom: 0.2in;
+  line-height: 1.5;
+}
+
+/* ─── PRINT ─── */
+@media print {
+  body { font-size: 10.5pt; }
+  .page {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+  .content { padding: 0.6in 0.7in; }
+  .cover, .cta-page {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .stat-box, .callout.navy, .cost-table th, .hood-card, .review {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .numbered-list li::before, .step-num {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+@media screen {
+  body { background: #ccc; }
+  .page {
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════ PAGE 1: COVER ═══════ -->
+<div class="page cover">
+  <div class="cover-year">— 2 0 2 6 —</div>
+  <div class="cover-rule"></div>
+  <h1>The Guide to Selling<br><em>Your Bayonne Home</em></h1>
+  <p class="cover-sub">Market Insights · Expert Strategy · Local Knowledge</p>
+  <div class="cover-agent">
+    <h3>Daniela Sepúlveda</h3>
+    <p>WEICHERT, REALTORS® — BAYONNE</p>
+  </div>
+  <div class="cover-bottom">
+    <p class="cover-contact">201-877-0303 &nbsp;·&nbsp; @danielarealestatenj &nbsp;·&nbsp; daniela.sepulveda@weichert.com</p>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 2: WHY 2026 ═══════ -->
+<div class="page content">
+  <h2><span class="num">Chapter One</span>Why 2026 Is a Great Time<br>to Sell in Bayonne</h2>
+  <div class="gold-rule"></div>
+  <p class="section-intro">Bayonne's real estate market is experiencing a historic surge. Here's what the numbers tell us — and why sellers are in the driver's seat.</p>
+
+  <div class="stats">
+    <div class="stat-box">
+      <span class="num">$510K</span>
+      <span class="label">Avg. Home Price</span>
+    </div>
+    <div class="stat-box">
+      <span class="num">18%</span>
+      <span class="label">3-Year Appreciation</span>
+    </div>
+    <div class="stat-box">
+      <span class="num">28</span>
+      <span class="label">Avg. Days on Market</span>
+    </div>
+    <div class="stat-box">
+      <span class="num">2.1</span>
+      <span class="label">Months of Inventory</span>
+    </div>
+  </div>
+
+  <h3>🏙️ NYC Commuters Are Driving Demand</h3>
+  <p>With the Hudson-Bergen Light Rail providing a direct connection to Jersey City, Hoboken, and NYC ferry terminals, Bayonne has become the <strong>most affordable waterfront community</strong> in Hudson County. Buyers priced out of Jersey City and Hoboken are flocking here — and they're willing to pay a premium for the right home.</p>
+
+  <h3>🚊 Light Rail Expansion & New Development</h3>
+  <p>The continued expansion of transit-oriented development along the light rail corridor has transformed Bayonne's housing landscape. New luxury apartments at the former Military Ocean Terminal have brought thousands of new residents, increasing demand for established single-family and multi-family homes throughout the city.</p>
+
+  <div class="callout navy">
+    <p><strong>📊 Key Insight:</strong> Homes within a 10-minute walk of a light rail station are selling for <strong>12–15% more</strong> than comparable properties further away. If your home is near transit, you have a significant pricing advantage.</p>
+  </div>
+
+  <h3>📈 Hudson County Demand Trends</h3>
+  <p>Hudson County remains one of the hottest markets in New Jersey. Low inventory — just <strong>2.1 months of supply</strong> — means buyers are competing for limited listings. Multiple-offer situations are common, especially for well-priced, move-in ready homes under $550K.</p>
+
+  <div class="pull-quote">
+    "Bayonne isn't just affordable anymore — it's desirable. Sellers who list now are catching the market at its peak momentum."
+    <span class="attr">— Daniela Sepúlveda, Weichert Realtors</span>
+  </div>
+
+  <div class="page-footer">
+    <span>The 2026 Guide to Selling Your Bayonne Home</span>
+    <span class="gold">Daniela Sepúlveda · Weichert, Realtors®</span>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 3: WHAT'S YOUR HOME WORTH? ═══════ -->
+<div class="page content">
+  <h2><span class="num">Chapter Two</span>What's Your Home<br>Really Worth?</h2>
+  <div class="gold-rule"></div>
+  <p class="section-intro">Your home's value isn't a number on a website — it's a story told through comparable sales, market conditions, and local expertise.</p>
+
+  <h3>🏠 CMA vs. Zillow: What's the Difference?</h3>
+  <p>A <strong>Comparative Market Analysis (CMA)</strong> is prepared by a local agent who physically inspects your property and compares it to recently sold homes in your specific neighborhood. Unlike automated estimates, a CMA accounts for:</p>
+
+  <div class="two-col">
+    <ul class="check-list">
+      <li>Recent renovations and upgrades</li>
+      <li>Unique features (yard size, parking, views)</li>
+      <li>Condition of finishes and systems</li>
+      <li>Current buyer demand in your area</li>
+      <li>Seasonal market fluctuations</li>
+      <li>Pending sales not yet in public records</li>
+    </ul>
+  </div>
+
+  <div class="callout gold-bg">
+    <p><span class="icon">⚠️</span> <strong>Online estimates can be off by 10–20%</strong> — that's $50K–$100K on a Bayonne home. Zillow's "Zestimate" uses a national algorithm that can't account for a new kitchen, a finished basement, or the fact that your block just got two bidding wars.</p>
+  </div>
+
+  <h3>🔑 What Drives Value in Bayonne?</h3>
+  <div class="two-col">
+    <div>
+      <h4>📍 Location Factors</h4>
+      <ul class="check-list">
+        <li>Proximity to light rail stations</li>
+        <li>Distance to NYC transportation</li>
+        <li>School district ratings</li>
+        <li>Walkability to Broadway shops</li>
+        <li>Park and waterfront access</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🏗️ Property Factors</h4>
+      <ul class="check-list">
+        <li>Multi-family vs. single-family</li>
+        <li>Lot size and off-street parking</li>
+        <li>Number of legal units</li>
+        <li>Basement and attic potential</li>
+        <li>Overall condition and age</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><span class="icon">💡</span> <strong>Multi-family premium:</strong> Two- and three-family homes in Bayonne command strong prices because buyers can offset their mortgage with rental income. A well-maintained two-family can fetch <strong>$575K–$700K+</strong> depending on location and condition.</p>
+  </div>
+
+  <div class="pull-quote">
+    "I offer every homeowner a complimentary, no-obligation home valuation. Let's find out what your home is really worth — not what an algorithm guesses."
+    <span class="attr">— Daniela Sepúlveda</span>
+  </div>
+
+  <div class="page-footer">
+    <span>The 2026 Guide to Selling Your Bayonne Home</span>
+    <span class="gold">Daniela Sepúlveda · Weichert, Realtors®</span>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 4: 5 BIGGEST MISTAKES ═══════ -->
+<div class="page content">
+  <h2><span class="num">Chapter Three</span>The 5 Biggest Mistakes<br>Bayonne Sellers Make</h2>
+  <div class="gold-rule"></div>
+  <p class="section-intro">Avoid these common pitfalls that cost sellers thousands — or months of wasted time on the market.</p>
+
+  <ol class="numbered-list">
+    <li>
+      <strong>Overpricing Based on Emotional Attachment</strong><br>
+      You love your home — and you should. But buyers don't share your memories. Overpricing by even 5% can cause your listing to sit, become "stale," and ultimately sell for <em>less</em> than it would have at the right price. The first two weeks are critical: that's when buyer interest peaks.
+    </li>
+    <li>
+      <strong>Skipping Staging and Preparation</strong><br>
+      First impressions happen in seconds. A cluttered, personalized home makes it harder for buyers to see themselves living there. Professional staging (even light staging) can increase your sale price by 5–10% and dramatically reduce time on market.
+    </li>
+    <li>
+      <strong>Using Bad Photos</strong><br>
+      Over 95% of buyers start their search online. Dark, blurry, or cluttered photos — especially phone pics — will cause buyers to scroll right past your listing. Professional photography isn't optional; it's essential. I include it with every listing.
+    </li>
+    <li>
+      <strong>Choosing an Agent Based on the Highest Price Promise</strong><br>
+      Some agents will quote an inflated price just to win your listing, then pressure you to reduce later. A great agent gives you an <em>honest</em> price backed by data — and a marketing plan to get you the best result. Ask for a CMA and a strategy, not just a number.
+    </li>
+    <li>
+      <strong>Not Understanding Closing Costs</strong><br>
+      Many sellers are surprised by NJ closing costs: the Realty Transfer Fee, GIT withholding, attorney fees, and commission add up. Knowing your <em>net proceeds</em> upfront prevents unpleasant surprises at the closing table. <em>(See Chapter Six for a full breakdown.)</em>
+    </li>
+  </ol>
+
+  <div class="callout navy" style="margin-top: 0.25in;">
+    <p><strong>🎯 The Bottom Line:</strong> The right agent doesn't just list your home — they <strong>position, market, and negotiate</strong> to maximize your net proceeds. Every decision, from pricing to photography, impacts your bottom line.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>The 2026 Guide to Selling Your Bayonne Home</span>
+    <span class="gold">Daniela Sepúlveda · Weichert, Realtors®</span>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 5: PREPARE YOUR HOME ═══════ -->
+<div class="page content">
+  <h2><span class="num">Chapter Four</span>How to Prepare Your<br>Home for Sale</h2>
+  <div class="gold-rule"></div>
+  <p class="section-intro">A well-prepared home sells faster and for more money. Here's your room-by-room game plan.</p>
+
+  <div class="two-col">
+    <div>
+      <h3>🚪 Room-by-Room Checklist</h3>
+      <h4>Kitchen</h4>
+      <ul class="check-list">
+        <li>Clear countertops of all but 1–2 items</li>
+        <li>Deep clean appliances inside and out</li>
+        <li>Replace outdated hardware (easy win!)</li>
+        <li>Fix leaky faucets and running toilets</li>
+      </ul>
+      <h4>Bathrooms</h4>
+      <ul class="check-list">
+        <li>Re-caulk tub and shower</li>
+        <li>Replace stained shower curtains</li>
+        <li>Add fresh white towels for showings</li>
+        <li>Fix any dripping faucets</li>
+      </ul>
+      <h4>Living Areas</h4>
+      <ul class="check-list">
+        <li>Remove excess furniture (less is more)</li>
+        <li>Pack away personal photos and collections</li>
+        <li>Clean windows to maximize light</li>
+        <li>Fresh neutral paint if walls are scuffed</li>
+      </ul>
+      <h4>Bedrooms</h4>
+      <ul class="check-list">
+        <li>Reduce furniture to bed + 2 nightstands</li>
+        <li>Clear closets to 60% capacity</li>
+        <li>New bedding in neutral tones</li>
+      </ul>
+    </div>
+    <div>
+      <h3>🏘️ Bayonne Curb Appeal Tips</h3>
+      <p style="font-size:10pt;">Bayonne's row houses and multi-families have unique curb appeal needs:</p>
+      <ul class="check-list">
+        <li>Power wash front steps, sidewalk, and siding</li>
+        <li>Paint or stain the front door and railings</li>
+        <li>Add matching planters with seasonal flowers</li>
+        <li>Replace old house numbers and mailbox</li>
+        <li>Ensure porch lights work (evening showings!)</li>
+        <li>Clean and repair any cracked concrete</li>
+        <li>Tidy shared areas in multi-family homes</li>
+      </ul>
+
+      <h3>💰 Highest-ROI Improvements</h3>
+      <div class="callout" style="margin-top:0.1in">
+        <p style="font-size:10pt; margin:0;">
+          <strong>🎨 Fresh paint:</strong> $500–1,500 → adds $3K–5K<br>
+          <strong>🔧 Minor kitchen update:</strong> $2K–5K → adds $8K–12K<br>
+          <strong>💡 Updated lighting:</strong> $200–600 → adds $1K–2K<br>
+          <strong>🚿 Bathroom refresh:</strong> $1K–3K → adds $4K–7K<br>
+          <strong>🌿 Landscaping:</strong> $500–1K → adds $2K–4K
+        </p>
+      </div>
+
+      <h3>🎨 Staging Tips</h3>
+      <ul class="check-list">
+        <li>Use neutral colors: whites, grays, soft blues</li>
+        <li>Add greenery — plants make spaces feel alive</li>
+        <li>Set the dining table for a "lifestyle" feel</li>
+        <li>Light candles or use subtle scent diffusers</li>
+        <li>Maximize light: open all blinds, add lamps</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>The 2026 Guide to Selling Your Bayonne Home</span>
+    <span class="gold">Daniela Sepúlveda · Weichert, Realtors®</span>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 6: SELLING PROCESS ═══════ -->
+<div class="page content">
+  <h2><span class="num">Chapter Five</span>The Selling Process:<br>Step by Step</h2>
+  <div class="gold-rule"></div>
+  <p class="section-intro">From "let's sell" to "sold!" — here's what to expect at every stage. The typical timeline in Bayonne is 60–90 days from listing to closing.</p>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <h4>Pre-Listing Preparation · Weeks 1–2</h4>
+      <p>Home valuation and CMA, listing agreement, photography scheduling, staging consultation, and getting your home show-ready. We also discuss pricing strategy and marketing plan.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <h4>Professional Photography & Marketing · Week 2</h4>
+      <p>Professional photos, virtual tours, listing description, and marketing materials created. Your home is entered into the MLS and syndicated to Zillow, Realtor.com, and 100+ websites.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <h4>Active Listing & Showings · Weeks 2–5</h4>
+      <p>Open houses, private showings, broker tours, and social media promotion. I provide weekly updates on showing activity, feedback, and any needed adjustments.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <h4>Offer Review & Negotiation · Weeks 3–6</h4>
+      <p>Review all offers with you, negotiate terms (price, contingencies, closing date). In a multiple-offer situation, I guide you to select the strongest overall offer — not just the highest price.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-body">
+      <h4>Attorney Review & Inspections · Weeks 5–8</h4>
+      <p>NJ requires a 3-day attorney review period after contract signing. Then comes the home inspection, and any negotiated repairs or credits. Your attorney handles the legal review.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-body">
+      <h4>Appraisal & Mortgage Process · Weeks 6–10</h4>
+      <p>The buyer's lender orders an appraisal to confirm the home's value. During this time, the buyer secures their mortgage commitment. I coordinate with all parties to keep things on track.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">7</div>
+    <div class="step-body">
+      <h4>Clear to Close & Closing Day · Weeks 10–12</h4>
+      <p>Final walkthrough, review of closing documents, transfer of keys. Congratulations — you've officially sold your Bayonne home! 🎉</p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:0.15in">
+    <p><span class="icon">👥</span> <strong>Key Players in Your Sale:</strong> Your <strong>real estate agent</strong> (me!), your <strong>real estate attorney</strong>, the buyer's agent, home <strong>inspector</strong>, <strong>appraiser</strong>, and the buyer's <strong>lender</strong>. I coordinate with all of them so you don't have to.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>The 2026 Guide to Selling Your Bayonne Home</span>
+    <span class="gold">Daniela Sepúlveda · Weichert, Realtors®</span>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 7: COSTS ═══════ -->
+<div class="page content">
+  <h2><span class="num">Chapter Six</span>Understanding<br>Your Costs</h2>
+  <div class="gold-rule"></div>
+  <p class="section-intro">No surprises at the closing table. Here's a transparent breakdown of what sellers typically pay in New Jersey.</p>
+
+  <h3>💰 NJ Seller Closing Costs Breakdown</h3>
+  <table class="cost-table">
+    <thead>
+      <tr><th>Cost Item</th><th>Typical Amount</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Real Estate Commission</td><td>5–6% of sale price</td><td>Split between listing & buyer's agent</td></tr>
+      <tr><td>NJ Realty Transfer Fee</td><td>~1% of sale price</td><td>State-mandated; sliding scale based on price</td></tr>
+      <tr><td>GIT / Estimated Income Tax</td><td>1–2% of sale price</td><td>NJ withholding; credited on your tax return</td></tr>
+      <tr><td>Real Estate Attorney</td><td>$1,000 – $1,500</td><td>Required in NJ transactions</td></tr>
+      <tr><td>Title Search & Insurance</td><td>$500 – $1,200</td><td>If seller is providing</td></tr>
+      <tr><td>Municipal Lien Search (CCO)</td><td>$200 – $500</td><td>Certificate of Continued Occupancy fees</td></tr>
+      <tr><td>Home Warranty (optional)</td><td>$400 – $600</td><td>Can attract buyers; covers major systems</td></tr>
+      <tr><td>Smoke/CO Detector Cert.</td><td>$100 – $200</td><td>Required by NJ for sale</td></tr>
+      <tr class="total"><td>Estimated Total</td><td colspan="2">Approximately 8–10% of the sale price</td></tr>
+    </tbody>
+  </table>
+
+  <h3>📋 Net Proceeds Example</h3>
+  <div class="callout gold-bg">
+    <p style="font-size:10.5pt;">
+      <strong>Sale Price:</strong> $510,000<br>
+      <strong>Less Commission (5.5%):</strong> −$26,675<br>
+      <strong>Less Realty Transfer Fee (~1%):</strong> −$4,850<br>
+      <strong>Less GIT Withholding (1%):</strong> −$4,850<br>
+      <strong>Less Attorney & Misc. (~$2,500):</strong> −$2,500<br>
+      <strong>Less Mortgage Payoff:</strong> −$200,000<br><br>
+      <span style="font-size:14pt; color: var(--navy); font-family: 'Playfair Display', serif;">
+        <strong>Estimated Net Proceeds: $246,125</strong>
+      </span>
+    </p>
+  </div>
+
+  <div class="callout">
+    <p><span class="icon">💡</span> <strong>About the GIT:</strong> New Jersey's Gross Income Tax (GIT) withholding is <em>not</em> an extra tax — it's an estimated payment toward your state income tax. If you've lived in the home as your primary residence and qualify for exemptions, you may get most or all of it back when you file. Your attorney and CPA can advise.</p>
+  </div>
+
+  <div class="callout navy">
+    <p><strong>📊 I provide every client with a personalized net proceeds estimate</strong> before we go to market — so you know exactly what you'll walk away with. No guesswork.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>The 2026 Guide to Selling Your Bayonne Home</span>
+    <span class="gold">Daniela Sepúlveda · Weichert, Realtors®</span>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 8: NEIGHBORHOOD SPOTLIGHT ═══════ -->
+<div class="page content">
+  <h2><span class="num">Chapter Seven</span>Bayonne Neighborhood<br>Spotlight</h2>
+  <div class="gold-rule"></div>
+  <p class="section-intro">Every Bayonne neighborhood has its own character and appeal. Here's what's drawing buyers to each area.</p>
+
+  <div class="hood-grid">
+    <div class="hood-card">
+      <h4>🏘️ Bergen Point</h4>
+      <p>The charming southern tip of Bayonne, known for its tree-lined streets, Victorian-era homes, and proximity to the bayfront. Families love the walkability to local shops and restaurants along Broadway.</p>
+      <p class="price">Avg. Sale Price: $450K–$525K</p>
+      <p style="font-size:9pt; color: var(--gray);">Popular with: Families, first-time buyers</p>
+    </div>
+    <div class="hood-card">
+      <h4>🛍️ Broadway Corridor</h4>
+      <p>Bayonne's main commercial artery, lined with shops, restaurants, and services. Homes near Broadway offer unmatched walkability and convenience, plus proximity to multiple light rail stations.</p>
+      <p class="price">Avg. Sale Price: $420K–$510K</p>
+      <p style="font-size:9pt; color: var(--gray);">Popular with: NYC commuters, young professionals</p>
+    </div>
+    <div class="hood-card">
+      <h4>⚓ Constable Hook</h4>
+      <p>A tight-knit community on the eastern shore with a neighborhood feel that longtime residents love. Offers some of Bayonne's most affordable options with strong appreciation potential as development continues.</p>
+      <p class="price">Avg. Sale Price: $380K–$460K</p>
+      <p style="font-size:9pt; color: var(--gray);">Popular with: Investors, value buyers</p>
+    </div>
+    <div class="hood-card">
+      <h4>🌊 Kill Van Kull Waterfront</h4>
+      <p>The crown jewel of Bayonne's transformation. New luxury developments at the former Military Ocean Terminal have created a vibrant waterfront community with stunning views, parks, and ferry access.</p>
+      <p class="price">Avg. Sale Price: $500K–$650K+</p>
+      <p style="font-size:9pt; color: var(--gray);">Popular with: Luxury buyers, NYC transplants</p>
+    </div>
+  </div>
+
+  <div class="pull-quote">
+    "I don't just sell homes in Bayonne — I live and breathe this community. I know which blocks are trending, where the best school zones are, and what buyers are looking for right now."
+    <span class="attr">— Daniela Sepúlveda</span>
+  </div>
+
+  <div class="callout">
+    <p><span class="icon">📍</span> <strong>Not sure how your neighborhood stacks up?</strong> I track every sale in Bayonne and can give you a hyper-local analysis of what's happening on your specific block — not just your zip code.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>The 2026 Guide to Selling Your Bayonne Home</span>
+    <span class="gold">Daniela Sepúlveda · Weichert, Realtors®</span>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 9: WHY DANIELA ═══════ -->
+<div class="page content">
+  <h2><span class="num">Chapter Eight</span>Why Work With<br>Daniela?</h2>
+  <div class="gold-rule"></div>
+  <p class="section-intro">Selling your home is one of life's biggest financial decisions. You deserve an agent who combines local expertise with genuine care for your results.</p>
+
+  <h3>🌟 My Approach</h3>
+  <div class="two-col">
+    <div>
+      <h4>📍 Local Expertise</h4>
+      <p>I specialize exclusively in Bayonne and Hudson County. I know the micro-markets, the trends, and the buyers. This isn't a side gig — it's my passion and my profession.</p>
+
+      <h4>🎯 Personalized Service</h4>
+      <p>No two homes are alike, and no two sellers have the same goals. I create a custom marketing and pricing strategy for every client, with regular communication throughout the process.</p>
+    </div>
+    <div>
+      <h4>📸 Proven Marketing</h4>
+      <p>Professional photography, social media campaigns, targeted advertising, open houses, and the full power of the Weichert network. Your home gets maximum exposure to qualified buyers.</p>
+
+      <h4>🤝 Trusted Network</h4>
+      <p>From attorneys to inspectors to contractors, I've built relationships with the best professionals in the area. When you need a recommendation, I've got you covered.</p>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 0.15in; margin: 0.2in 0 0.1in;">
+    <h3 style="margin:0;">⭐ 5.0 Stars on Google</h3>
+    <span style="color: var(--gold); font-size: 16pt;">★★★★★</span>
+    <span style="font-size: 9pt; color: var(--gray);">(9 reviews)</span>
+  </div>
+
+  <div class="review">
+    <p>"Daniela was incredibly helpful throughout the entire process. She was always available to answer our questions and made everything so much easier. Her knowledge of the Bayonne market is outstanding. We couldn't have asked for a better agent!"</p>
+    <div class="reviewer">— Richard B Flores <span class="stars">★★★★★</span></div>
+  </div>
+
+  <div class="review">
+    <p>"Daniela is an amazing realtor! She went above and beyond to help us find our dream home. She is patient, knowledgeable, and truly cares about her clients. I would highly recommend Daniela to anyone looking to buy or sell a home!"</p>
+    <div class="reviewer">— Nancy Kopsachilis <span class="stars">★★★★★</span></div>
+  </div>
+
+  <div class="callout navy" style="margin-top: 0.2in;">
+    <p style="text-align:center; font-size: 12pt;">
+      <strong>Weichert, Realtors®</strong> — One of the most recognized names in real estate.<br>
+      <span style="font-size: 10pt; color: var(--gold-light);">National reach. Local expertise. Proven results since 1969.</span>
+    </p>
+  </div>
+
+  <div class="page-footer">
+    <span>The 2026 Guide to Selling Your Bayonne Home</span>
+    <span class="gold">Daniela Sepúlveda · Weichert, Realtors®</span>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 10: CTA ═══════ -->
+<div class="page cta-page">
+  <h2>Ready to Sell?<br>Let's Talk.</h2>
+  <div class="gold-rule"></div>
+  <p style="font-size: 13pt; color: rgba(255,255,255,0.9); max-width: 5in; line-height: 1.6;">
+    Every great sale starts with a conversation. I'd love to learn about your home, your goals, and how I can help you get the best possible result.
+  </p>
+  <p style="font-size: 11pt; margin-top: 0.15in;">
+    <strong style="color: var(--gold);">🏠 Claim Your Free Home Valuation</strong><br>
+    No obligation. No pressure. Just honest answers about what your home is worth in today's market.
+  </p>
+
+  <div class="cta-box">
+    <div class="label">Call or Text</div>
+    <div class="value"><a href="tel:2018770303">201-877-0303</a></div>
+  </div>
+
+  <div style="margin-top: 0.25in;">
+    <p style="font-size: 10pt; color: var(--gold-light); margin-bottom: 0.08in;">
+      📱 <strong>Instagram:</strong> <a href="https://instagram.com/danielarealestatenj" style="color: var(--gold-light); text-decoration: none;">@danielarealestatenj</a>
+    </p>
+    <p style="font-size: 10pt; color: var(--gold-light); margin-bottom: 0.08in;">
+      🌐 <strong>Website:</strong> <a href="https://wearebob1000-dev.github.io/daniela-website/" style="color: var(--gold-light); text-decoration: none;">wearebob1000-dev.github.io/daniela-website</a>
+    </p>
+  </div>
+
+  <div class="qr-placeholder">
+    [ QR Code ]
+  </div>
+  <p style="font-size: 8pt; color: rgba(255,255,255,0.4); margin-top: 0.08in;">Scan to visit my website</p>
+
+  <div class="cta-social" style="margin-top: 0.4in; padding-top: 0.25in; border-top: 1px solid rgba(201,169,110,0.2);">
+    <p style="font-family: 'Playfair Display', serif; font-size: 14pt; color: var(--white); margin-bottom: 0.05in;">Daniela Sepúlveda</p>
+    <p style="font-size: 9pt; letter-spacing: 2px; text-transform: uppercase; color: var(--gold);">Licensed Real Estate Agent</p>
+    <p style="font-size: 9pt; color: rgba(255,255,255,0.5); margin-top: 0.05in;">Weichert, Realtors® — Bayonne, NJ</p>
+  </div>
+</div>
+
+</body>
+</html>
