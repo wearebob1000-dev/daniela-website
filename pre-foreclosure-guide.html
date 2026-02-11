@@ -23,8 +23,8 @@
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text);
-  line-height: 1.7;
-  font-size: 15px;
+  line-height:1.5;
+  font-size: 12.5px;
   background: var(--white);
 }
 
@@ -80,7 +80,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   max-width: 700px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .cover h1 span {
   color: var(--gold);
@@ -111,7 +111,7 @@ body {
 }
 .cover-brokerage {
   color: rgba(255,255,255,0.5);
-  font-size: 13px;
+  font-size:11.5px;
   letter-spacing: 1px;
   margin-bottom: 40px;
 }
@@ -122,7 +122,7 @@ body {
   background: rgba(201,169,110,0.12);
   border: 1px solid rgba(201,169,110,0.25);
   color: var(--gold-light);
-  font-size: 12px;
+  font-size:11px;
   font-weight: 500;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -140,11 +140,11 @@ body {
 .section-sm { min-height: auto; padding-bottom: 40px; }
 
 .section-header {
-  margin-bottom: 36px;
+  margin-bottom: 10px;
 }
 .section-number {
   font-family: 'Playfair Display', serif;
-  font-size: 13px;
+  font-size:11.5px;
   color: var(--gold);
   font-weight: 600;
   letter-spacing: 2px;
@@ -163,7 +163,7 @@ body {
 .section-intro {
   font-size: 17px;
   color: var(--text-light);
-  line-height: 1.8;
+  line-height:1.5;
   max-width: 650px;
 }
 .section h3 {
@@ -173,13 +173,13 @@ body {
   color: var(--navy);
   margin: 32px 0 12px;
 }
-.section p { margin-bottom: 14px; }
+.section p { margin-bottom: 8px; }
 
 /* CALLOUT BOX */
 .callout {
   background: var(--gold-pale);
   border-left: 4px solid var(--gold);
-  padding: 20px 24px;
+  padding: 12px 16px;
   border-radius: 0 8px 8px 0;
   margin: 24px 0;
 }
@@ -192,7 +192,7 @@ body {
 .callout p { margin-bottom: 0; }
 .callout-icon {
   font-size: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   display: block;
 }
 
@@ -201,9 +201,11 @@ body {
   background: var(--warm-gray);
   border: 1px solid #e8e4de;
   border-radius: 10px;
-  padding: 24px 28px;
+  padding: 14px 18px;
   margin: 28px 0;
   text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 .takeaway p {
   font-family: 'Playfair Display', serif;
@@ -211,13 +213,13 @@ body {
   color: var(--navy);
   font-weight: 600;
   margin: 0;
-  line-height: 1.5;
+  line-height:1.4;
 }
 
 /* TIMELINE */
 .timeline {
   position: relative;
-  margin: 32px 0;
+  margin: 8px 0;
   padding-left: 36px;
 }
 .timeline::before {
@@ -229,8 +231,10 @@ body {
 }
 .timeline-item {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 8px;
   padding-left: 20px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 .timeline-item::before {
   content: '';
@@ -259,17 +263,19 @@ body {
   margin-bottom: 2px;
 }
 .timeline-desc {
-  font-size: 13.5px;
+  font-size: 12.5px;
   color: var(--text-light);
   line-height: 1.6;
 }
 
 /* OPTIONS CARDS */
 .option-card {
+  break-inside: avoid;
+  page-break-inside: avoid;
   border: 1px solid #e0dcd5;
   border-radius: 10px;
-  padding: 24px 28px;
-  margin-bottom: 20px;
+  padding: 14px 18px;
+  margin-bottom: 8px;
   position: relative;
   transition: box-shadow 0.2s;
 }
@@ -283,9 +289,9 @@ body {
   background: var(--navy);
   color: var(--gold);
   font-family: 'Playfair Display', serif;
-  font-size: 15px;
+  font-size: 12.5px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 .option-card.recommended {
   border-color: var(--gold);
@@ -308,11 +314,11 @@ body {
   font-size: 19px;
   font-weight: 700;
   color: var(--navy);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .option-desc { font-size: 14px; color: var(--text-light); margin-bottom: 8px; }
 .option-best {
-  font-size: 12.5px;
+  font-size:11px;
   font-weight: 600;
   color: var(--gold);
 }
@@ -322,21 +328,21 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin: 24px 0;
-  font-size: 13.5px;
+  font-size: 12.5px;
 }
 .compare-table thead th {
   background: var(--navy);
   color: var(--white);
-  padding: 12px 14px;
+  padding: 7px 10px;
   text-align: left;
   font-weight: 600;
-  font-size: 12px;
+  font-size:11px;
   letter-spacing: 0.5px;
 }
 .compare-table thead th:first-child { border-radius: 8px 0 0 0; }
 .compare-table thead th:last-child { border-radius: 0 8px 0 0; }
 .compare-table tbody td {
-  padding: 12px 14px;
+  padding: 7px 10px;
   border-bottom: 1px solid #eee;
   vertical-align: top;
 }
@@ -350,13 +356,13 @@ body {
 .steps { counter-reset: step; margin: 24px 0; }
 .step {
   display: flex;
-  gap: 18px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 8px;
   align-items: flex-start;
 }
 .step-num {
   flex-shrink: 0;
-  width: 36px; height: 36px;
+  width: 30px; height: 30px;
   border-radius: 50%;
   background: var(--navy);
   color: var(--gold);
@@ -370,7 +376,7 @@ body {
 .step-content h4 {
   font-weight: 600;
   color: var(--navy);
-  font-size: 15px;
+  font-size: 12.5px;
   margin-bottom: 2px;
 }
 .step-content p {
@@ -381,9 +387,11 @@ body {
 
 /* EXAMPLE BOX */
 .example-box {
+  break-inside: avoid;
+  page-break-inside: avoid;
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
   border-radius: 12px;
-  padding: 28px 32px;
+  padding: 18px 24px;
   margin: 28px 0;
   color: var(--white);
 }
@@ -402,16 +410,18 @@ body {
 .resources-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 12px;
   margin: 24px 0;
 }
 .resource-card {
   background: var(--warm-gray);
   border-radius: 10px;
-  padding: 20px;
+  padding: 14px;
   border: 1px solid #e8e4de;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
-.resource-card .rc-icon { font-size: 22px; margin-bottom: 8px; }
+.resource-card .rc-icon { font-size: 18px; margin-bottom: 4px; }
 .resource-card h4 {
   font-size: 14px;
   font-weight: 700;
@@ -419,12 +429,12 @@ body {
   margin-bottom: 4px;
 }
 .resource-card p {
-  font-size: 13px;
+  font-size:11.5px;
   color: var(--text-light);
   margin-bottom: 4px;
 }
 .resource-card .rc-phone {
-  font-size: 15px;
+  font-size: 12.5px;
   font-weight: 700;
   color: var(--navy);
   letter-spacing: 0.5px;
@@ -440,7 +450,7 @@ body {
 /* QUOTE */
 .testimonial {
   text-align: center;
-  margin: 32px 0;
+  margin: 8px 0;
   padding: 28px;
   background: var(--warm-gray);
   border-radius: 12px;
@@ -450,12 +460,12 @@ body {
   font-size: 20px;
   font-style: italic;
   color: var(--navy);
-  line-height: 1.5;
+  line-height:1.4;
   margin-bottom: 12px;
 }
 .testimonial cite {
   font-style: normal;
-  font-size: 13px;
+  font-size:11.5px;
   color: var(--text-light);
   font-weight: 500;
 }
@@ -472,7 +482,7 @@ body {
   padding: 40px;
   text-align: center;
   color: var(--white);
-  margin: 32px 0;
+  margin: 8px 0;
 }
 .contact-block h3 {
   font-family: 'Playfair Display', serif;
@@ -483,7 +493,7 @@ body {
 .contact-block .contact-sub {
   color: rgba(255,255,255,0.65);
   font-size: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 8px;
 }
 .contact-methods {
   display: flex;
@@ -495,7 +505,7 @@ body {
 .contact-method {
   text-align: center;
 }
-.contact-method .cm-icon { font-size: 24px; margin-bottom: 6px; }
+.contact-method .cm-icon { font-size: 24px; margin-bottom: 4px; }
 .contact-method .cm-label {
   font-size: 10px;
   text-transform: uppercase;
@@ -504,12 +514,12 @@ body {
   margin-bottom: 4px;
 }
 .contact-method .cm-value {
-  font-size: 15px;
+  font-size: 12.5px;
   font-weight: 600;
   color: var(--gold-light);
 }
 .contact-confidential {
-  font-size: 12px;
+  font-size:11px;
   color: rgba(255,255,255,0.5);
   margin-top: 16px;
   font-style: italic;
@@ -542,12 +552,20 @@ body {
   body { font-size: 12pt; }
   .cover { min-height: 100vh; }
   .section { min-height: auto; padding: 36pt 40pt; }
+  .section.fill-page { min-height: 92vh; display: flex; flex-direction: column; justify-content: space-between; }
+  .section.fill-page-center { min-height: 92vh; display: flex; flex-direction: column; justify-content: center; }
   .page-break { page-break-after: always; break-after: page; }
+  .option-card { break-inside: avoid; page-break-inside: avoid; }
   .option-card:hover { box-shadow: none; }
+  .timeline-item { break-inside: avoid; page-break-inside: avoid; }
+  .resource-card { break-inside: avoid; page-break-inside: avoid; }
+  .takeaway { break-inside: avoid; page-break-inside: avoid; }
+  .section-header { break-after: avoid; page-break-after: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
   .resources-grid { grid-template-columns: 1fr 1fr; }
   .contact-methods { gap: 24px; }
   .cover::before, .cover::after { display: none; }
-  @page { margin: 0.5in; }
+  @page { margin: 0.35in; }
   @page :first { margin: 0; }
 }
 
@@ -555,7 +573,7 @@ body {
   .cover h1 { font-size: 30px; }
   .section { padding: 40px 24px; }
   .resources-grid { grid-template-columns: 1fr; }
-  .contact-methods { flex-direction: column; gap: 16px; }
+  .contact-methods { flex-direction: column; gap: 12px; }
 }
 </style>
 </head>
@@ -574,7 +592,7 @@ body {
 <div class="page-break"></div>
 
 <!-- ==================== YOU'RE NOT ALONE ==================== -->
-<div class="section">
+<div class="section fill-page fill-page">
   <div class="section-header">
     <div class="section-number">Section One</div>
     <h2>You're <span>Not Alone</span></h2>
@@ -600,61 +618,61 @@ body {
 <div class="page-break"></div>
 
 <!-- ==================== FORECLOSURE TIMELINE ==================== -->
-<div class="section">
-  <div class="section-header">
+<div class="section" style="font-size:10.5px; padding:14px 36px; line-height:1.35;">
+  <div class="section-header" style="margin-bottom:8px;">
     <div class="section-number">Section Two</div>
     <h2>Understanding the <span>Foreclosure Timeline</span> in New Jersey</h2>
   </div>
 
-  <p>Here's something most people don't know: <strong>New Jersey is a judicial foreclosure state.</strong> That means your lender has to go through the court system to foreclose — and that process is one of the slowest in the entire country.</p>
+  <p style="margin-bottom:6px;">Here's something most people don't know: <strong>New Jersey is a judicial foreclosure state.</strong> That means your lender has to go through the court system to foreclose — and that process is one of the slowest in the entire country.</p>
 
-  <div class="callout callout-navy">
+  <div class="callout callout-navy" style="padding:8px 12px; margin:6px 0;">
     <p><strong>Key fact:</strong> The NJ foreclosure process can take <strong>1 to 3+ years</strong> from first missed payment to sheriff sale. That means you have time to explore your options — but you should start now.</p>
   </div>
 
-  <h3>⚖️ The NJ Foreclosure Timeline</h3>
+  <h3 style="margin:6px 0 4px;">⚖️ The NJ Foreclosure Timeline</h3>
 
-  <div class="timeline">
-    <div class="timeline-item">
+  <div class="timeline" style="gap:0;">
+    <div class="timeline-item" style="padding:4px 0 4px 16px;">
       <div class="timeline-label">Day 1 – Day 30</div>
       <div class="timeline-title">Missed Payment</div>
       <div class="timeline-desc">Your lender will contact you to follow up. Late fees begin. This is the easiest time to resolve the situation.</div>
     </div>
-    <div class="timeline-item">
+    <div class="timeline-item" style="padding:4px 0 4px 16px;">
       <div class="timeline-label">30 – 90 Days</div>
       <div class="timeline-title">Notice of Default / Demand Letter</div>
       <div class="timeline-desc">Your servicer sends a formal notice that you're behind. They must offer you loss mitigation options before proceeding.</div>
     </div>
-    <div class="timeline-item">
+    <div class="timeline-item" style="padding:4px 0 4px 16px;">
       <div class="timeline-label">90+ Days</div>
       <div class="timeline-title">Lis Pendens Filed (Lawsuit Begins)</div>
       <div class="timeline-desc">The lender files a foreclosure complaint with the court. You'll be served legal papers. <strong>Don't ignore them</strong> — you have the right to respond.</div>
     </div>
-    <div class="timeline-item">
+    <div class="timeline-item" style="padding:4px 0 4px 16px;">
       <div class="timeline-label">6 – 18 Months</div>
       <div class="timeline-title">Court Process &amp; Mediation</div>
-      <div class="timeline-desc">The case moves through the court system. NJ offers a Foreclosure Mediation Program to help you negotiate with your lender. You can request mediation.</div>
+      <div class="timeline-desc">The case moves through the court system. NJ offers a Foreclosure Mediation Program to help you negotiate with your lender.</div>
     </div>
-    <div class="timeline-item">
+    <div class="timeline-item" style="padding:4px 0 4px 16px;">
       <div class="timeline-label">12 – 24+ Months</div>
       <div class="timeline-title">Final Judgment</div>
       <div class="timeline-desc">If no resolution is reached, the court issues a final judgment of foreclosure. Even at this stage, options may still exist.</div>
     </div>
-    <div class="timeline-item danger">
+    <div class="timeline-item danger" style="padding:4px 0 4px 16px;">
       <div class="timeline-label">After Final Judgment</div>
       <div class="timeline-title">Sheriff Sale</div>
       <div class="timeline-desc">The property is sold at public auction. NJ law provides a right of redemption even after sale, but this is the stage to avoid at all costs.</div>
     </div>
   </div>
 
-  <div class="takeaway">
-    <p>⏰ YOU HAVE TIME — but every day you wait, you lose options.<br>The best time to act is right now.</p>
+  <div class="takeaway" style="margin-top:6px; padding:6px 10px;">
+    <p>⏰ YOU HAVE TIME — but every day you wait, you lose options. The best time to act is right now.</p>
   </div>
 </div>
 <div class="page-break"></div>
 
 <!-- ==================== YOUR 6 OPTIONS ==================== -->
-<div class="section">
+<div class="section fill-page">
   <div class="section-header">
     <div class="section-number">Section Three</div>
     <h2>Your <span>6 Options</span></h2>
@@ -681,7 +699,9 @@ body {
     <div class="option-desc">If your home is worth more than what you owe, selling puts <strong>cash in your pocket</strong>, pays off your mortgage, and protects your credit. In Bayonne's strong market, many homeowners have significant equity they don't even realize. A pre-foreclosure sale is dramatically better for your financial future than a foreclosure.</div>
     <div class="option-best">✦ Best if: You have equity in your home and want to walk away with money and your credit intact. This is where Daniela can help most.</div>
   </div>
-
+</div>
+<div class="page-break"></div>
+<div class="section">
   <div class="option-card">
     <div class="option-rank">4</div>
     <div class="option-title">Short Sale</div>
@@ -706,7 +726,7 @@ body {
 <div class="page-break"></div>
 
 <!-- ==================== CREDIT IMPACT ==================== -->
-<div class="section">
+<div class="section" style="font-size:11.5px; padding:20px 36px;">
   <div class="section-header">
     <div class="section-number">Section Four</div>
     <h2>The Credit Impact: <span>Why Acting NOW Matters</span></h2>
@@ -781,7 +801,7 @@ body {
 <div class="page-break"></div>
 
 <!-- ==================== HOW SELLING WORKS ==================== -->
-<div class="section">
+<div class="section" style="font-size:11.5px; padding:20px 36px;">
   <div class="section-header">
     <div class="section-number">Section Five</div>
     <h2>How Selling <span>Before Foreclosure</span> Works</h2>
@@ -840,7 +860,7 @@ body {
 <div class="page-break"></div>
 
 <!-- ==================== FREE RESOURCES ==================== -->
-<div class="section">
+<div class="section" style="font-size:11px; padding:20px 36px;">
   <div class="section-header">
     <div class="section-number">Section Six</div>
     <h2>Free Resources for <span>NJ Homeowners</span></h2>
@@ -900,7 +920,7 @@ body {
 <div class="page-break"></div>
 
 <!-- ==================== BAYONNE SPECIFIC ==================== -->
-<div class="section section-sm">
+<div class="section fill-page">
   <div class="section-header">
     <div class="section-number">Section Seven</div>
     <h2>Why <span>Bayonne</span> Homeowners Have an Advantage</h2>
@@ -935,12 +955,12 @@ body {
 
   <p>I created this guide because I believe every homeowner deserves to know their options — <em>all</em> of them, not just the ones that benefit me. Here's my promise to you:</p>
 
-  <ul style="margin: 16px 0 24px 20px;">
-    <li style="margin-bottom: 10px;"><strong>Free, confidential consultation</strong> — no obligation, no pressure, no judgment</li>
-    <li style="margin-bottom: 10px;"><strong>I'll walk you through ALL your options</strong> — including ones that don't involve selling</li>
-    <li style="margin-bottom: 10px;"><strong>If selling is the right path</strong>, I'll help you get the most value for your home in the shortest time</li>
-    <li style="margin-bottom: 10px;"><strong>I'll connect you with resources</strong> — housing counselors, legal aid, assistance programs</li>
-    <li style="margin-bottom: 10px;"><strong>I speak English and Spanish</strong> — Hablo inglés y español</li>
+  <ul style="margin: 8px 0 12px 20px;">
+    <li style="margin-bottom: 4px;"><strong>Free, confidential consultation</strong> — no obligation, no pressure, no judgment</li>
+    <li style="margin-bottom: 4px;"><strong>I'll walk you through ALL your options</strong> — including ones that don't involve selling</li>
+    <li style="margin-bottom: 4px;"><strong>If selling is the right path</strong>, I'll help you get the most value for your home in the shortest time</li>
+    <li style="margin-bottom: 4px;"><strong>I'll connect you with resources</strong> — housing counselors, legal aid, assistance programs</li>
+    <li style="margin-bottom: 4px;"><strong>I speak English and Spanish</strong> — Hablo inglés y español</li>
   </ul>
 
   <div class="testimonial">
@@ -949,17 +969,12 @@ body {
     <cite>— Romaine Thomas, Google Review</cite>
   </div>
 
-  <p style="text-align: center; font-family: 'Playfair Display', serif; font-size: 19px; color: var(--navy); font-style: italic; margin: 24px 0;">"I'm here to help, not to judge."</p>
-</div>
-<div class="page-break"></div>
+  <p style="text-align: center; font-family: 'Playfair Display', serif; font-size: 14px; color: var(--navy); font-style: italic; margin: 8px 0;">"I'm here to help, not to judge."</p>
 
-<!-- ==================== TAKE THE FIRST STEP ==================== -->
-<div class="section" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-  <div class="section-header" style="text-align: center;">
-    <div class="section-number">The First Step</div>
-    <h2>The Hardest Part Is<br><span>Making the First Call</span></h2>
-    <p class="section-intro" style="margin: 12px auto 0; text-align: center;">Everything after that gets easier. I promise.</p>
-  </div>
+  <hr style="border: none; border-top: 1px solid var(--gold); margin: 8px 0; opacity: 0.4;">
+
+  <h3 style="text-align:center; font-family:'Playfair Display',serif; color:var(--navy); font-size:18px; margin-bottom:8px;">The Hardest Part Is Making the First Call</h3>
+  <p style="text-align:center; color:var(--text-light); font-size:11px; margin-bottom:12px;">Everything after that gets easier. I promise.</p>
 
   <div class="contact-block" style="width: 100%; max-width: 600px;">
     <h3>Daniela Sepúlveda</h3>
@@ -990,8 +1005,8 @@ body {
     <p class="contact-confidential">🔒 Everything we discuss is 100% confidential.</p>
   </div>
 
-  <div style="margin-top: 32px; max-width: 500px;">
-    <p style="font-size: 15px; color: var(--text-light); line-height: 1.8;">You didn't choose this situation, but you <em>can</em> choose what happens next. Whether you need information, resources, or just someone to listen — I'm here.</p>
+  <div style="margin-top: 12px; max-width: 500px;">
+    <p style="font-size: 12.5px; color: var(--text-light); line-height:1.5;">You didn't choose this situation, but you <em>can</em> choose what happens next. Whether you need information, resources, or just someone to listen — I'm here.</p>
     <p style="font-family: 'Playfair Display', serif; font-size: 20px; color: var(--navy); font-weight: 600; margin-top: 20px;">Your home. Your future. Your choice.</p>
   </div>
 </div>
