@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Foreclosure Flyer (Weichert) — Daniela Sepúlveda</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+@page { size: letter; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  width: 8.5in;
+  height: 11in;
+  background: #fff;
+  color: #CC0000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top banner */
+.top-banner {
+  background: linear-gradient(135deg, #CC0000 0%, #a30000 100%);
+  padding: 28px 48px 24px;
+  text-align: center;
+}
+.top-banner .pre-head {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #FFD100;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.top-banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+.top-banner h1 span { color: #FFD100; }
+.top-banner .sub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.75);
+  font-weight: 400;
+}
+
+/* Gold divider */
+.gold-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #FFD100, #FFE14D, #FFD100);
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 28px 48px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro {
+  font-size: 14px;
+  color: #5a5a5a;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.intro strong { color: #CC0000; }
+
+/* Options grid */
+.options-header {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #CC0000;
+  font-weight: 700;
+}
+.options-header span { color: #FFD100; }
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.option {
+  background: #f7f5f2;
+  border-radius: 8px;
+  padding: 12px 14px;
+  border-left: 4px solid #FFD100;
+}
+.option.highlight {
+  background: #CC0000;
+  border-left-color: #FFD100;
+}
+.option .num {
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFD100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+.option .title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #CC0000;
+  margin-bottom: 2px;
+}
+.option.highlight .title { color: #ffffff; }
+.option.highlight .title .badge {
+  background: #FFD100;
+  color: #CC0000;
+  font-size: 8px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-left: 6px;
+  vertical-align: middle;
+  font-weight: 800;
+}
+.option .desc {
+  font-size: 10.5px;
+  color: #5a5a5a;
+  line-height: 1.4;
+}
+.option.highlight .desc { color: rgba(255,255,255,0.8); }
+
+/* CTA section */
+.cta-section {
+  background: linear-gradient(135deg, #CC0000 0%, #a30000 100%);
+  border-radius: 12px;
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.cta-left {
+  flex: 1;
+}
+.cta-left .head {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.cta-left .head span { color: #FFD100; }
+.cta-left .desc {
+  font-size: 11px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.cta-left .includes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 10px;
+  color: #FFD100;
+  font-weight: 600;
+}
+.qr-box {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  min-width: 130px;
+}
+.qr-box img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto 6px;
+}
+.qr-box .scan {
+  font-size: 9px;
+  font-weight: 700;
+  color: #CC0000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.qr-box .free {
+  font-size: 8px;
+  color: #FFD100;
+  font-weight: 600;
+}
+
+/* Bottom contact */
+.bottom-contact {
+  background: #f7f5f2;
+  padding: 18px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 3px solid #FFD100;
+}
+.agent-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.agent-initials {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #CC0000, #a30000);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFD100;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #FFD100;
+}
+.agent-details h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #CC0000;
+  margin-bottom: 1px;
+}
+.agent-details .brokerage {
+  font-size: 10px;
+  color: #5a5a5a;
+}
+.contact-items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.contact-item {
+  text-align: center;
+}
+.contact-item .icon { font-size: 16px; margin-bottom: 1px; }
+.contact-item .label { font-size: 8px; color: #5a5a5a; text-transform: uppercase; letter-spacing: 0.5px; }
+.contact-item .value { font-size: 11px; font-weight: 600; color: #CC0000; }
+
+/* Confidential footer */
+.footer {
+  background: #CC0000;
+  padding: 8px 48px;
+  text-align: center;
+  font-size: 8px;
+  color: rgba(255,255,255,0.5);
+}
+</style>
+</head>
+<body>
+
+<div class="top-banner">
+  <div class="pre-head">Free Homeowner Resource</div>
+  <h1>Facing Foreclosure?<br>You Have <span>More Options</span> Than You Think</h1>
+  <div class="sub">A free guide for Bayonne homeowners navigating pre-foreclosure</div>
+</div>
+<div class="gold-bar"></div>
+
+<div class="content">
+  <p class="intro">If you've received a notice of default or are behind on payments, <strong>don't panic.</strong> New Jersey's foreclosure process takes 1–3+ years, giving you time to explore options that can <strong>protect your credit and keep money in your pocket.</strong></p>
+
+  <div class="options-header">Inside the Guide: Your <span>6 Options</span></div>
+
+  <div class="options-grid">
+    <div class="option">
+      <div class="num">Option 1</div>
+      <div class="title">Reinstatement</div>
+      <div class="desc">Catch up on missed payments and continue your mortgage as if nothing happened.</div>
+    </div>
+    <div class="option">
+      <div class="num">Option 2</div>
+      <div class="title">Loan Modification</div>
+      <div class="desc">Work with your lender to lower your rate, extend your term, or reduce principal.</div>
+    </div>
+    <div class="option highlight">
+      <div class="num">⭐ Recommended</div>
+      <div class="title">Sell Before Foreclosure <span class="badge">BEST OPTION</span></div>
+      <div class="desc">Keep your equity, protect your credit, and walk away with cash. Bayonne's strong market means real value for your home.</div>
+    </div>
+    <div class="option">
+      <div class="num">Option 4</div>
+      <div class="title">Short Sale</div>
+      <div class="desc">Negotiate with your bank to accept less than owed — far better than foreclosure.</div>
+    </div>
+    <div class="option">
+      <div class="num">Option 5</div>
+      <div class="title">Deed in Lieu</div>
+      <div class="desc">Transfer ownership to the lender voluntarily and avoid the court process.</div>
+    </div>
+    <div class="option">
+      <div class="num">Option 6</div>
+      <div class="title">Bankruptcy (Ch. 13)</div>
+      <div class="desc">Court-supervised repayment plan that halts foreclosure. Last resort.</div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div class="cta-left">
+      <div class="head">Download the <span>Complete Free Guide</span></div>
+      <div class="desc">9-page comprehensive guide covering the full NJ foreclosure timeline, all 6 options explained, credit impact comparison, how selling works step-by-step, and free local resources.</div>
+      <div class="includes">
+        <span>✓ NJ Timeline</span>
+        <span>✓ Credit Impact Chart</span>
+        <span>✓ 6 Options Explained</span>
+        <span>✓ Step-by-Step Selling Guide</span>
+        <span>✓ Free Resources</span>
+      </div>
+    </div>
+    <div class="qr-box">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wearebob1000-dev.github.io/daniela-website/pre-foreclosure-guide.pdf&color=1a2332" alt="QR Code">
+      <div class="scan">Scan to Download</div>
+      <div class="free">100% Free • No Sign-up</div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-contact">
+  <div class="agent-info">
+    <div class="agent-initials">DS</div>
+    <div class="agent-details">
+      <h3>Daniela Sepúlveda</h3>
+      <div class="brokerage">Weichert, Realtors® — Bayonne | Hablo Español</div>
+    </div>
+  </div>
+  <div class="contact-items">
+    <div class="contact-item">
+      <div class="icon">📞</div>
+      <div class="label">Call / Text</div>
+      <div class="value">201-877-0303</div>
+    </div>
+    <div class="contact-item">
+      <div class="icon">✉️</div>
+      <div class="label">Email</div>
+      <div class="value">dsepulveda@weichert.com</div>
+    </div>
+    <div class="contact-item">
+      <div class="icon">📱</div>
+      <div class="label">Instagram</div>
+      <div class="value">@danielarealestatenj</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  🔒 All consultations are 100% confidential. No obligation. | © 2026 Daniela Sepúlveda | This flyer is for informational purposes only and does not constitute legal or financial advice.
+</div>
+
+</body>
+</html>
