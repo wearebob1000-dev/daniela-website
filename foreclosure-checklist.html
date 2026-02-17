@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foreclosure Auction Checklist — Daniela Sepúlveda</title>
+<style>
+  @page { size: letter; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #1a1a1a;
+    background: #fff;
+    width: 8.5in;
+    height: 11in;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Weichert Colors */
+  :root {
+    --gold: #C8962E;
+    --dark-gold: #A67A1E;
+    --black: #1a1a1a;
+    --light-gold: #F5EDD6;
+    --white: #ffffff;
+  }
+
+  /* Header */
+  .header {
+    background: var(--black);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left h1 {
+    color: var(--gold);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .header-left p {
+    color: #ccc;
+    font-size: 9px;
+    margin-top: 2px;
+  }
+  .header-right {
+    text-align: right;
+    color: #ccc;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .header-right strong {
+    color: var(--gold);
+  }
+
+  /* Gold bar */
+  .gold-bar {
+    height: 3px;
+    background: linear-gradient(90deg, var(--dark-gold), var(--gold), var(--dark-gold));
+  }
+
+  /* Title Section */
+  .title-section {
+    background: var(--light-gold);
+    padding: 16px 40px 12px;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+  }
+  .title-section h2 {
+    font-size: 21px;
+    color: var(--black);
+    margin-bottom: 3px;
+  }
+  .title-section .subtitle {
+    font-size: 10.5px;
+    color: #555;
+    font-style: italic;
+  }
+
+  /* Content */
+  .content {
+    padding: 14px 40px 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .section {
+    margin-bottom: 12px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    border-bottom: 1.5px solid var(--gold);
+    padding-bottom: 3px;
+  }
+  .section-icon {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+  .section-header h3 {
+    font-size: 11px;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .checklist {
+    list-style: none;
+    padding: 0;
+  }
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3px;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .checkbox {
+    width: 11px;
+    height: 11px;
+    border: 1.5px solid var(--gold);
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+
+  /* Options grid */
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px 16px;
+  }
+  .option-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .option-bullet {
+    color: var(--gold);
+    font-size: 12px;
+    margin-right: 6px;
+    flex-shrink: 0;
+    line-height: 1.2;
+  }
+  .option-item strong {
+    color: var(--black);
+  }
+
+  /* Do Not section */
+  .donot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px 16px;
+  }
+  .donot-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .donot-x {
+    color: #c0392b;
+    font-weight: 700;
+    margin-right: 6px;
+    flex-shrink: 0;
+    font-size: 11px;
+  }
+
+  /* Resources box */
+  .resources-box {
+    background: var(--light-gold);
+    border: 1.5px solid var(--gold);
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin-bottom: 12px;
+  }
+  .resources-box h3 {
+    font-size: 11px;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .resource-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    text-align: center;
+  }
+  .resource-item {
+    font-size: 9.5px;
+    line-height: 1.4;
+  }
+  .resource-item strong {
+    display: block;
+    color: var(--black);
+    font-size: 10px;
+  }
+  .resource-item span {
+    color: #555;
+  }
+
+  /* NJ Note */
+  .nj-note {
+    background: var(--black);
+    color: var(--white);
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .nj-note strong {
+    color: var(--gold);
+  }
+
+  /* Footer */
+  .footer {
+    background: var(--black);
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-left {
+    color: #ccc;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .footer-left strong {
+    color: var(--gold);
+    font-size: 10.5px;
+  }
+  .footer-right {
+    text-align: right;
+  }
+  .footer-cta {
+    background: var(--gold);
+    color: var(--black);
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .footer-cta-sub {
+    color: #999;
+    font-size: 8px;
+    margin-top: 3px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>DANIELA SEPÚLVEDA</h1>
+      <p>Licensed NJ Realtor® — Weichert, Realtors®</p>
+    </div>
+    <div class="header-right">
+      <strong>📞 201-877-0303</strong><br>
+      dsepulveda@weichert.com<br>
+      @danielarealestatenj
+    </div>
+  </div>
+  <div class="gold-bar"></div>
+
+  <!-- Title -->
+  <div class="title-section">
+    <h2>Foreclosure Auction Checklist</h2>
+    <p class="subtitle">Your step-by-step guide to understanding your options before it's too late</p>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Immediate Actions -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-icon">⏰</span>
+        <h3>Immediate Actions — Do This Week</h3>
+      </div>
+      <ul class="checklist">
+        <li><div class="checkbox"></div><span>Gather all mortgage statements — know exactly what you owe</span></li>
+        <li><div class="checkbox"></div><span>Find your foreclosure notice — confirm the exact auction date</span></li>
+        <li><div class="checkbox"></div><span>Call a <strong>NJ real estate attorney</strong> — many offer free consultations</span></li>
+        <li><div class="checkbox"></div><span>Contact a <strong>HUD-approved housing counselor</strong> (free): <strong>800-569-4287</strong></span></li>
+        <li><div class="checkbox"></div><span>Do NOT ignore mail from your lender or the court — every letter matters</span></li>
+      </ul>
+    </div>
+
+    <!-- Know Your Numbers -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-icon">💰</span>
+        <h3>Know Your Numbers</h3>
+      </div>
+      <ul class="checklist">
+        <li><div class="checkbox"></div><span>How much do you owe on the mortgage?</span></li>
+        <li><div class="checkbox"></div><span>Any second mortgages, liens, or tax debt?</span></li>
+        <li><div class="checkbox"></div><span>What is your home worth today? <em>(Get a free CMA from a local agent)</em></span></li>
+        <li><div class="checkbox"></div><span>Is there equity? <em>(Home value minus total debt = your equity)</em></span></li>
+      </ul>
+    </div>
+
+    <!-- Your Options -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-icon">🔑</span>
+        <h3>Your Options — Yes, You Still Have Some</h3>
+      </div>
+      <div class="options-grid">
+        <div class="option-item">
+          <span class="option-bullet">▸</span>
+          <span><strong>Sell before auction</strong> — You can list and sell your home right up until auction day</span>
+        </div>
+        <div class="option-item">
+          <span class="option-bullet">▸</span>
+          <span><strong>Short sale</strong> — If you owe more than it's worth, the bank may accept less</span>
+        </div>
+        <div class="option-item">
+          <span class="option-bullet">▸</span>
+          <span><strong>Loan modification</strong> — Ask your lender about new payment terms</span>
+        </div>
+        <div class="option-item">
+          <span class="option-bullet">▸</span>
+          <span><strong>Reinstatement</strong> — Pay the past-due amount to stop the process entirely</span>
+        </div>
+        <div class="option-item">
+          <span class="option-bullet">▸</span>
+          <span><strong>Bankruptcy filing</strong> — Triggers an automatic stay that pauses the auction</span>
+        </div>
+        <div class="option-item">
+          <span class="option-bullet">▸</span>
+          <span><strong>Deed in lieu</strong> — Voluntarily return the property (less credit damage than foreclosure)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Do Not -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-icon">🚫</span>
+        <h3>Protect Yourself — Do NOT</h3>
+      </div>
+      <div class="donot-grid">
+        <div class="donot-item">
+          <span class="donot-x">✕</span>
+          <span>Ignore the situation — it will not go away on its own</span>
+        </div>
+        <div class="donot-item">
+          <span class="donot-x">✕</span>
+          <span>Sign anything without an attorney reviewing it first</span>
+        </div>
+        <div class="donot-item">
+          <span class="donot-x">✕</span>
+          <span>Pay upfront fees to anyone promising to "save your home"</span>
+        </div>
+        <div class="donot-item">
+          <span class="donot-x">✕</span>
+          <span>Move out before you have a plan — you have rights as the homeowner</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resources -->
+    <div class="resources-box">
+      <h3>📞 Free Resources</h3>
+      <div class="resource-items">
+        <div class="resource-item">
+          <strong>HUD Counseling</strong>
+          <span>800-569-4287</span>
+        </div>
+        <div class="resource-item">
+          <strong>NJ Housing & Mortgage</strong>
+          <span>njhousing.gov</span>
+        </div>
+        <div class="resource-item">
+          <strong>NJ Foreclosure Mediation</strong>
+          <span>Ask your attorney</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- NJ Note -->
+    <div class="nj-note">
+      <strong>💡 New Jersey Advantage:</strong> Foreclosures in NJ go through the courts (judicial process). That means <strong>more time</strong> and <strong>more options</strong> to fight for your home — or exit on <strong>your</strong> terms.
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-left">
+      <strong>Daniela Sepúlveda</strong><br>
+      Weichert, Realtors® — Bayonne<br>
+      191 Lefante Way, Suite 2B, Bayonne, NJ 07002<br>
+      📞 201-877-0303 &nbsp;|&nbsp; dsepulveda@weichert.com
+    </div>
+    <div class="footer-right">
+      <div class="footer-cta">FREE CONSULTATION</div>
+      <div class="footer-cta-sub">No pressure. Just clarity.</div>
+    </div>
+  </div>
+
+</body>
+</html>
