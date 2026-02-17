@@ -138,6 +138,7 @@ body {
   min-height: 100vh;
 }
 .section-sm { min-height: auto; padding-bottom: 40px; }
+.section-fit { min-height: auto !important; padding: 32px 50px !important; }
 
 .section-header {
   margin-bottom: 10px;
@@ -552,6 +553,7 @@ body {
   body { font-size: 12pt; }
   .cover { min-height: 100vh; }
   .section { min-height: auto; padding: 36pt 40pt; }
+  .section-fit { padding: 24pt 40pt !important; }
   .section.fill-page { min-height: 92vh; display: flex; flex-direction: column; justify-content: space-between; }
   .section.fill-page-center { min-height: 92vh; display: flex; flex-direction: column; justify-content: center; }
   .page-break { page-break-after: always; break-after: page; }
@@ -956,64 +958,41 @@ body {
 <div class="page-break"></div>
 
 <!-- ==================== HOW DANIELA CAN HELP ==================== -->
-<div class="section" style="padding:16px 40px 12px; min-height:auto;">
-  <div class="section-header" style="margin-bottom:6px;">
+<div class="section section-fit">
+  <div class="section-header">
     <div class="section-number">Section Eight</div>
     <h2>How <span>Daniela</span> Can Help</h2>
   </div>
 
-  <p>I created this guide because I believe every homeowner deserves to know their options. Here's my promise to you:</p>
+  <div class="callout">
+    <span class="callout-icon">🤝</span>
+    <p><strong>My promise to you:</strong> I created this guide because every homeowner deserves to know their options. I offer a free, confidential consultation — no obligation, no pressure. I'll walk you through all your options, connect you with housing counselors, legal aid, and assistance programs. Hablo inglés y español.</p>
+  </div>
 
-  <ul style="margin: 4px 0 8px 20px;">
-    <li><strong>Free, confidential consultation</strong> — no obligation, no pressure</li>
-    <li><strong>I'll walk you through ALL your options</strong> — including ones that don't involve selling</li>
-    <li><strong>I'll connect you with resources</strong> — housing counselors, legal aid, assistance programs</li>
-    <li><strong>I speak English and Spanish</strong> — Hablo inglés y español</li>
-  </ul>
-
-  <div class="testimonial" style="padding:8px 14px; margin:8px 0;">
+  <div class="testimonial" style="margin:12px 0; padding:12px;">
     <div class="stars">★★★★★</div>
     <blockquote>"Daniela is very reliable, understanding and goes above and beyond the call of duty."</blockquote>
     <cite>— Romaine Thomas, Google Review</cite>
   </div>
 
-  <h3 style="text-align:center; margin:10px 0 4px;">The Hardest Part Is Making the First Call</h3>
-  <p style="text-align:center; color:var(--text-light); margin-bottom:8px;">Everything after that gets easier. I promise.</p>
-
-  <div class="contact-block" style="width:100%; padding:14px 20px;">
-    <h3 style="margin-bottom:2px;">Daniela Sepúlveda</h3>
-    <p class="contact-sub" style="margin-bottom:8px;">Weichert, Realtors® — Bayonne</p>
-    <div class="contact-methods" style="gap:16px; margin-bottom:6px;">
-      <div class="contact-method">
-        <div class="cm-icon">📞</div>
-        <div class="cm-label">Call or Text</div>
-        <div class="cm-value">201-877-0303</div>
-      </div>
-      <div class="contact-method">
-        <div class="cm-icon">✉️</div>
-        <div class="cm-label">Email</div>
-        <div class="cm-value">dsepulveda@weichert.com</div>
-      </div>
-      <div class="contact-method">
-        <div class="cm-icon">📱</div>
-        <div class="cm-label">Instagram</div>
-        <div class="cm-value">@danielarealestatenj</div>
-      </div>
-      <div class="contact-method">
-        <div class="cm-icon">🌐</div>
-        <div class="cm-label">Website</div>
-        <div class="cm-value">danielasepulveda.com</div>
-      </div>
-    </div>
-    <p class="contact-confidential" style="margin-top:4px;">🔒 Everything we discuss is 100% confidential.</p>
+  <div class="callout callout-navy" style="margin:12px 0; text-align:center;">
+    <p><strong>The hardest part is making the first call.</strong> Everything after that gets easier. I promise.</p>
   </div>
 
-  <p style="text-align:center; color:var(--text-light); margin-top:8px;">You didn't choose this situation, but you <em>can</em> choose what happens next.</p>
+  <div class="contact-block" style="padding:16px 24px; margin:12px 0;">
+    <h3 style="margin-bottom:2px;">Daniela Sepúlveda</h3>
+    <p class="contact-sub" style="margin-bottom:8px;">Weichert, Realtors® — Bayonne</p>
+    <p style="color:var(--gold-light); margin-bottom:2px;">📞 <strong>201-877-0303</strong> &nbsp;&nbsp; ✉️ <strong>dsepulveda@weichert.com</strong></p>
+    <p style="color:var(--gold-light); margin-bottom:0;">📱 <strong>@danielarealestatenj</strong> &nbsp;&nbsp; 🌐 <strong>danielasepulveda.com</strong></p>
+    <p class="contact-confidential" style="margin-top:6px;">🔒 Everything we discuss is 100% confidential.</p>
+  </div>
 
-  <p style="font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); font-weight:600; margin-top:6px; text-align:center;">Your home. Your future. Your choice.</p>
+  <div class="takeaway" style="margin:12px 0 8px;">
+    <p>Your home. Your future. Your choice.</p>
+  </div>
 
-  <div class="guide-footer">
-    <p>© 2026 Daniela Sepúlveda | Weichert, Realtors® — Bayonne | This guide is for informational purposes only and does not constitute legal or financial advice.</p>
+  <div class="guide-footer" style="padding:8px;">
+    <p>© 2026 Daniela Sepúlveda | Weichert, Realtors® — Bayonne | For informational purposes only; not legal or financial advice.</p>
   </div>
 </div>
 
