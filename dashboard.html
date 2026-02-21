@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniela's Team Dashboard</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #0f1117; color: #e4e4e7; min-height: 100vh; }
+.header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 24px 32px; border-bottom: 1px solid #2a2a3e; }
+.header h1 { font-size: 24px; font-weight: 700; color: #fff; }
+.header p { color: #a1a1aa; font-size: 14px; margin-top: 4px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.stat-card { background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 12px; padding: 20px; text-align: center; }
+.stat-number { font-size: 32px; font-weight: 700; color: #22c55e; }
+.stat-label { font-size: 12px; color: #a1a1aa; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+.section-title { font-size: 18px; font-weight: 600; margin-bottom: 16px; color: #fff; display: flex; align-items: center; gap: 8px; }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.agent-card { background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 12px; padding: 20px; transition: border-color 0.2s; }
+.agent-card:hover { border-color: #3b82f6; }
+.agent-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.agent-icon { font-size: 28px; }
+.agent-name { font-size: 16px; font-weight: 600; color: #fff; }
+.agent-role { font-size: 12px; color: #a1a1aa; }
+.agent-schedule { font-size: 12px; color: #3b82f6; margin-top: 2px; }
+.agent-status { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+.status-active { background: #052e16; color: #22c55e; border: 1px solid #166534; }
+.status-waiting { background: #1c1917; color: #f59e0b; border: 1px solid #854d0e; }
+.agent-last-run { font-size: 12px; color: #71717a; margin-top: 10px; }
+.pipeline { background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+.pipeline-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; justify-content: center; }
+.pipeline-step { background: #16213e; border: 1px solid #2a2a3e; border-radius: 8px; padding: 10px 16px; font-size: 13px; text-align: center; }
+.pipeline-arrow { color: #3b82f6; font-size: 20px; }
+.leads-table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+.leads-table th { text-align: left; padding: 10px 12px; font-size: 12px; color: #a1a1aa; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #2a2a3e; }
+.leads-table td { padding: 10px 12px; font-size: 13px; border-bottom: 1px solid #1f1f2e; }
+.leads-table tr:hover { background: #16213e; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+.tag-expired { background: #451a03; color: #fb923c; }
+.tag-fsbo { background: #052e16; color: #4ade80; }
+.tag-preforeclosure { background: #2a0519; color: #f472b6; }
+.tag-reddit { background: #172554; color: #60a5fa; }
+.refresh-note { text-align: center; color: #52525b; font-size: 12px; margin-top: 24px; }
+#last-updated { color: #a1a1aa; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>👩‍💼 Daniela's Team Dashboard</h1>
+  <p>Your AI real estate team — managed by Bob</p>
+</div>
+
+<div class="container">
+
+  <!-- Stats -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number" id="total-agents">6</div>
+      <div class="stat-label">Active Agents</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" id="total-monitors">4</div>
+      <div class="stat-label">Monitors Running</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" id="total-leads">—</div>
+      <div class="stat-label">Leads Found</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" id="checks-today">—</div>
+      <div class="stat-label">Checks Today</div>
+    </div>
+  </div>
+
+  <!-- Pipeline -->
+  <div class="section-title">⚡ Pipeline Flow</div>
+  <div class="pipeline">
+    <div class="pipeline-flow">
+      <div class="pipeline-step">📡 Monitors<br><small>Find leads</small></div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">🔍 Riley<br><small>Research</small></div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">📊 Morgan<br><small>Run comps</small></div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">📝 Jordan<br><small>Write scripts</small></div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">📱 Daniela<br><small>Take action!</small></div>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <div class="section-title">🤖 Your Team</div>
+  <div class="team-grid">
+
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">🔍</div>
+        <div>
+          <div class="agent-name">Riley</div>
+          <div class="agent-role">Lead Researcher</div>
+          <div class="agent-schedule">⏰ 9:30 AM & 5:30 PM daily</div>
+        </div>
+        <div style="margin-left:auto;"><span class="agent-status status-active">● Active</span></div>
+      </div>
+      <div style="font-size:13px; color:#d4d4d8;">Researches every new lead — owner names, property values, equity, tax records. Also hunts pre-foreclosures & mortgage delinquencies.</div>
+      <div class="agent-last-run" id="riley-last">Last run: —</div>
+    </div>
+
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">📊</div>
+        <div>
+          <div class="agent-name">Morgan</div>
+          <div class="agent-role">Comp Analyzer</div>
+          <div class="agent-schedule">⏰ 10:00 AM daily</div>
+        </div>
+        <div style="margin-left:auto;"><span class="agent-status status-active">● Active</span></div>
+      </div>
+      <div style="font-size:13px; color:#d4d4d8;">Pulls 3-5 comparable sales for each lead. Calculates price/sqft and suggests listing price range.</div>
+      <div class="agent-last-run" id="morgan-last">Last run: —</div>
+    </div>
+
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">📝</div>
+        <div>
+          <div class="agent-name">Jordan</div>
+          <div class="agent-role">Cold Outreach Drafter</div>
+          <div class="agent-schedule">⏰ 11:00 AM daily</div>
+        </div>
+        <div style="margin-left:auto;"><span class="agent-status status-active">● Active</span></div>
+      </div>
+      <div style="font-size:13px; color:#d4d4d8;">Writes personalized door-knocking scripts, cold call scripts, and direct mail letters for each lead.</div>
+      <div class="agent-last-run" id="jordan-last">Last run: —</div>
+    </div>
+
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">✍️</div>
+        <div>
+          <div class="agent-name">Sage</div>
+          <div class="agent-role">Content Writer</div>
+          <div class="agent-schedule">⏰ Mon & Thu 8:00 AM</div>
+        </div>
+        <div style="margin-left:auto;"><span class="agent-status status-active">● Active</span></div>
+      </div>
+      <div style="font-size:13px; color:#d4d4d8;">Creates Instagram posts, captions, hashtags, Reel scripts, Story ideas, and blog outlines.</div>
+      <div class="agent-last-run" id="sage-last">Last run: —</div>
+    </div>
+
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">🔎</div>
+        <div>
+          <div class="agent-name">Scout</div>
+          <div class="agent-role">Reddit Scout</div>
+          <div class="agent-schedule">⏰ 11:00 AM & 7:00 PM daily</div>
+        </div>
+        <div style="margin-left:auto;"><span class="agent-status status-active">● Active</span></div>
+      </div>
+      <div style="font-size:13px; color:#d4d4d8;">Finds real estate conversations on Reddit and drafts helpful responses for you to post.</div>
+      <div class="agent-last-run" id="scout-last">Last run: —</div>
+    </div>
+
+    <div class="agent-card">
+      <div class="agent-header">
+        <div class="agent-icon">📈</div>
+        <div>
+          <div class="agent-name">Max</div>
+          <div class="agent-role">Market Reporter</div>
+          <div class="agent-schedule">⏰ Monday 8:00 AM</div>
+        </div>
+        <div style="margin-left:auto;"><span class="agent-status status-active">● Active</span></div>
+      </div>
+      <div style="font-size:13px; color:#d4d4d8;">Weekly market report — listings, price trends, inventory changes, news, and actionable insights.</div>
+      <div class="agent-last-run" id="max-last">Last run: —</div>
+    </div>
+
+  </div>
+
+  <!-- Monitors -->
+  <div class="section-title">📡 Active Monitors</div>
+  <div class="team-grid">
+    <div class="agent-card">
+      <div style="font-size:14px; font-weight:600; color:#fff; margin-bottom:8px;">🏠 Bayonne FSBO & Listings</div>
+      <div style="font-size:13px; color:#d4d4d8;">Checks Redfin for new FSBO listings and expired/withdrawn properties. Verifies on Zillow with owner names.</div>
+      <div class="agent-schedule">⏰ 9:00 AM & 5:00 PM daily</div>
+    </div>
+    <div class="agent-card">
+      <div style="font-size:14px; font-weight:600; color:#fff; margin-bottom:8px;">🏘️ Hudson County FSBO & Listings</div>
+      <div style="font-size:13px; color:#d4d4d8;">Same as Bayonne but covers JC, Hoboken, Union City, North Bergen, and all other Hudson County towns.</div>
+      <div class="agent-schedule">⏰ 9:00 AM & 5:00 PM daily</div>
+    </div>
+    <div class="agent-card">
+      <div style="font-size:14px; font-weight:600; color:#fff; margin-bottom:8px;">🔔 Bayonne Life Events</div>
+      <div style="font-size:13px; color:#d4d4d8;">Scans Craigslist, estate sales, Reddit, and broader web for selling signals in Bayonne.</div>
+      <div class="agent-schedule">⏰ 9:00 AM & 5:00 PM daily</div>
+    </div>
+    <div class="agent-card">
+      <div style="font-size:14px; font-weight:600; color:#fff; margin-bottom:8px;">🔔 Hudson County Life Events</div>
+      <div style="font-size:13px; color:#d4d4d8;">Same as Bayonne but covers all of Hudson County. Includes broader Reddit search.</div>
+      <div class="agent-schedule">⏰ 9:00 AM & 5:00 PM daily</div>
+    </div>
+  </div>
+
+  <div class="refresh-note">
+    Dashboard updates are managed by Bob. Ask him anytime for a live status! 💬
+  </div>
+
+</div>
+</body>
+</html>
